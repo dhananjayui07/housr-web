@@ -1,0 +1,739 @@
+@charset "UTF-8";
+
+/*
+Application Name: Housr - Fully furnished rooms for healthy, hygienic, happy living
+URL: Housr.in
+Description: Housr - Fully furnished rooms for healthy, hygienic, happy living
+Author: Dhananjay Kumar
+Version: 1.0
+
+INDEX
+
+01. Theme default css
+02. Header css
+03. Hero css
+04. Category CSS
+05. Features css
+06. Elements css
+07. Listing css
+08. Place css
+09. Products css
+10. Testimonial css
+11. Team css
+12. Blog css
+13. Widget css
+14. Footer css
+15. Contact css
+*/
+
+/*=========================
+1. Start COMMON css 
+==========================*/
+
+@import "./themify-icons.css"; 
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&family=Work+Sans:wght@300;400;500;600;700&display=swap");
+html {
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+i,
+span,
+a {
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #0d0d0d;
+    margin: 0px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 90px;
+    line-height: 90px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 55px;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+p {
+    color: #676767;
+    margin: 0px;
+}
+
+input,
+textarea {
+    display: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-weight: normal;
+    font-style: normal;
+    color: #676767;
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    overflow-x: hidden;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+.bg_cover {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.parallax-bg {
+    background-attachment: fixed;
+}
+
+.slick-slide {
+    outline: 0;
+}
+
+ul.social-link li {
+    display: inline-block;
+}
+
+.form_group {
+    position: relative;
+}
+
+.form_control {
+    width: 100%;
+    padding: 0 25px;
+    height: 60px;
+    border: none;
+}
+
+textarea.form_control {
+    padding-top: 15px;
+    display: inherit;
+}
+
+.section-title span.sub-title {
+    margin-bottom: 17px;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.section-title span.sub-title:after,
+.section-title span.sub-title:before {
+    display: inline-block;
+    /*content: "..";*/
+    border: 5px solid #e4e4e4;
+}
+
+.section-title span.sub-title:after {
+    margin-left: 7px;
+}
+
+.section-title span.sub-title:before {
+    margin-right: 7px;
+}
+
+.section-title.section-title-left span.sub-title:after {
+    display: none;
+}
+
+.section-title.section-title-right span.sub-title:before {
+    display: none;
+}
+
+.section-title h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .section-title h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-title h2 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+.section-title.section-title-two h2 {
+    font-weight: 300;
+    line-height: 50px;
+}
+
+.section-title.section-title-two h2 span.line {
+    position: relative;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.section-title.section-title-two h2 span.line:after {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    content: "";
+    height: 8px;
+    width: 100%;
+    background-color: #ffd74e;
+    z-index: -1;
+}
+
+
+/*===== All bg =====*/
+
+.light-bg {
+    background-color: #f7f7f7;
+}
+
+.dark-black {
+    background-color: #121416;
+}
+
+
+/*===== All Button Style =====*/
+
+button {
+    border: none;
+}
+
+.main-btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+    z-index: 1;
+    background-color: #ff344f;
+    padding: 16px 40px;
+    color: #fff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.main-btn:hover {
+    color: #fff;
+}
+
+.main-btn:hover:before {
+    bottom: 0;
+}
+
+.main-btn:before {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    /* background: url(../images/bg/colorful-bg.jpg) no-repeat center right; */
+    z-index: -1;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.main-btn.icon-btn:after {
+    display: inline-block;
+    content: "";
+    font-family: "themify";
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.main-btn.filled-btn {
+    background-color: transparent;
+    border: 2px solid #0d0d0d;
+    color: #0d0d0d;
+    line-height: 25px;
+}
+
+
+/*
+nice select css
+*/
+
+.nice-select {
+    outline: none;
+    float: none;
+    border-radius: 0px;
+    padding: 0 25px;
+}
+
+.nice-select.open:after {
+    -webkit-transform: none;
+    transform: none;
+}
+
+.nice-select:after {
+    content: "";
+    font-family: "themify";
+    right: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    -webkit-transform: none;
+    transform: none;
+    border: none;
+    top: 0;
+    margin-top: 0;
+    color: #2E2E2E;
+}
+
+.nice-select .list {}
+
+
+/*
+search 
+*/
+
+#search-modal {
+    background: rgba(23, 26, 33, 0.85);
+}
+
+#search-modal .modal-content {
+    background: 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+#search-modal .modal-content:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#search-modal .form_control {
+    padding-left: 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    color: #fff;
+    margin-bottom: 0;
+    height: 50px;
+}
+
+#search-modal .form_control:focus {
+    border-color: #ff344f;
+}
+
+#search-modal .form_control::-webkit-input-placeholder {
+    color: #fff;
+}
+
+#search-modal .form_control::-moz-placeholder {
+    color: #fff;
+}
+
+#search-modal .form_control:-ms-input-placeholder {
+    color: #fff;
+}
+
+#search-modal .form_control::-ms-input-placeholder {
+    color: #fff;
+}
+
+#search-modal .form_control::placeholder {
+    color: #fff;
+}
+
+#search-modal .search_btn {
+    position: absolute;
+    background: transparent;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+}
+
+
+/*
+Start Preloader css
+*/
+
+.preloader {
+    background-color: #fff;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 99999;
+}
+
+.preloader .loader {
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 9999;
+    -webkit-animation: loadershake infinite 0.8s linear;
+    animation: loadershake infinite 0.8s linear;
+}
+
+@-webkit-keyframes loadershake {
+    0% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    50% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+}
+
+@keyframes loadershake {
+    0% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    50% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+}
+
+
+/*
+End Preloader css
+*/
+
+
+/*
+Start scroll_up css
+*/
+
+.back-to-top {
+    background: #ff344f;
+    border-radius: 50%;
+    bottom: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    right: 30px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 337;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+    background: #0c1b36;
+    color: #fff;
+}
+
+
+/*
+End scroll_up css
+*/
+
+
+/*====================
+End COMMON css 
+======================*/
+
+.contact-information-list .information-item .icon,
+.copyright-area .copyright-text p,
+.footer-widget .widget.categories-widget ul.categories-link li a,
+.footer-widget .widget p,
+.footer-widget .widget h4.widget-title,
+.sidebar-widget-area .widget.contact-info-widget .contact-info-content .social-link li a:hover,
+.sidebar-widget-area .widget.contact-info-widget .contact-map .support-icon,
+.sidebar-widget-area .widget.newsletter-widget .newsletter-widget-wrap h3,
+.sidebar-widget-area .widget.tag-cloud-widget a:hover,
+.sidebar-widget-area .widget.categories-widget .categories-nav li a:hover,
+.blog-details-wrapper .entry-content .post-tag a:hover,
+.blog-post-item-four .entry-content .cat-btn,
+.blog-post-item-three .post-thumbnail .post-date a,
+.blog-post-item-one .post-thumbnail .post-date a,
+.team-item-one .team-img .team-social ul.social-link li a,
+.product-details-wrapper .products-gallery-slider .slick-arrow,
+.products-item-one .product-img .product-overlay .product-meta .icon:hover,
+.products-filter .list li a.active,
+.products-filter .list li a:hover,
+.place-item-three .place-thumbnail .place-overlay .place-content ul.ratings span,
+.place-item-three .place-thumbnail .place-overlay .place-content ul.ratings,
+.place-item-three .place-thumbnail .place-overlay .place-content h4,
+.place-item-two .place-thumbnail .place-overlay .place-content .icon,
+.place-item-one .place-thumbnail .place-content span.listing,
+.listing-details-wrapper.listing-details-wrapper-two .listing-info-area .button .icon-btn:hover,
+.listing-details-wrapper .listing-rating-box .single-average-rating span.rating,
+.listing-details-wrapper .listing-tag-box a:hover,
+.listing-list-item-two .listing-thumbnail .thumbnail-meta .meta-icon-title .icon,
+.listing-list-item-one .listing-thumbnail .cat-btn,
+.listing-tab-filter .nav-link.active,
+.listing-grid-one .listing-thumbnail .thumbnail-meta .meta-icon-title .icon,
+.listing-slider-one .slick-arrow:hover,
+.listing-search-filter .filter-right ul.filter-nav li a.active,
+.listing-search-filter .filter-right ul.filter-nav li a:hover,
+.featured-btn,
+.fioxen-pagination .pagination-list li a.active,
+.fioxen-pagination .pagination-list li a:hover,
+.newsletter-wrapper .newsletter-content-box-one .content h2,
+.newsletter-wrapper .newsletter-content-box-one .icon,
+.client-wrapper-two .client-content-box .main-btn:hover,
+.client-wrapper-two .client-content-box p,
+.amenities-content-box-one ul.button li .app-btn:hover .info h6,
+.amenities-content-box-one ul.button li .app-btn:hover .info span,
+.intro-content-box-one p,
+.intro-wrapper-one .play-content-one h5,
+.cta-wrapper-two .cta-content-box .main-btn:hover,
+.cta-wrapper-two .cta-content-box h2,
+.cta-wrapper-two .cta-content-box p,
+.cta-wrapper-two .company-name,
+.cta-wrapper-one .cta-content-box h2,
+.features-list-one .list-item .icon i,
+.category-item-two .category-img .category-overlay .category-content a,
+.breadcrumbs-wrapper-one .button .icon-btn:hover,
+.hero-wrapper-three .hero-search-wrapper .search-nav .nav-link.active,
+.hero-wrapper-three .hero-content h3,
+.hero-wrapper-three .hero-content h1,
+.hero-wrapper-two .hero-content p.tags,
+.hero-wrapper-two .hero-content h3,
+.hero-wrapper-two .hero-content h1,
+.section-title.section-title-white span.sub-title,
+.section-title.section-title-white h2,
+.section-title.section-title-white p {
+    color: #fff;
+}
+
+.contact-information-list .information-item .info p a:hover,
+.copyright-area .copyright-link ul li a:hover,
+.footer-widget .widget.categories-widget ul.categories-link li a:hover,
+.footer-widget .widget.recent-post-widget .post-widget-list .post-content-item .post-title-date h6.title:hover,
+.sidebar-widget-area .widget.business-hour-widget ul.time-info li span.st-close,
+.sidebar-widget-area .widget.recent-post-widget .recent-post-list .post-thumbnail-content .post-title-date h6:hover,
+.sidebar-widget-area .widget.recent-post-widget .recent-post-list .post-thumbnail-content .post-title-date .posted-on i,
+.sidebar-widget-area .widget.search-widget form .form_group i,
+.blog-details-wrapper .comments-area .comments-list .comment .comment-wrap .comment-author-content .reply,
+.blog-details-wrapper .post-navigation .post-nav-item h5:hover,
+.blog-details-wrapper .entry-content .list li:before,
+.blog-details-wrapper .entry-content .fioxen-blockquote h6,
+.blog-details-wrapper .entry-content p span,
+.blog-post-item-four .entry-content h3.title:hover,
+.blog-post-item-four .entry-content .post-meta ul li span i,
+.blog-post-item-four .entry-content .post-meta ul li span:hover,
+.blog-post-item-three .entry-content .post-meta ul li span i,
+.blog-post-item-three .entry-content h3.title:hover,
+.blog-post-item-two .entry-content h3.title:hover,
+.blog-post-item-one .entry-content .post-meta ul li span i,
+.blog-post-item-one .entry-content .cat-btn:hover,
+.blog-post-item-one .entry-content h3.title:hover,
+.post-meta ul li span a:hover,
+.btn-link:hover,
+.description-wrapper .products-review-form .ratings li:hover i,
+.description-wrapper .products-review-area ul.review-list .review .review-content .reply:hover,
+.product-details-wrapper .product-info .product-meta .wishlist-btn,
+.product-details-wrapper .product-info span.price,
+.products-item-one .product-info span.price,
+.products-filter .sort-dropdown .show-text p,
+.add-listing-form.upload-listing-form .upload-content .upload-title-icon span,
+.listing-details-wrapper.listing-details-wrapper-two .listing-info-area .listing-info-content .listing-meta ul li span i,
+.listing-details-wrapper .listing-review-box .review-list .review .review-content .content-meta .reply,
+.listing-details-wrapper .listing-content p.para,
+.listing-list-item-two .listing-content .listing-meta ul span i,
+.listing-list-item-one .listing-content .listing-meta ul span i,
+.listing-grid-item-two .listing-content .listing-meta ul span i,
+.listing-grid-one .listing-content .listing-meta ul span i,
+.listing-grid-one .listing-content span.phone-meta:hover,
+.listing-item .listing-content span.phone-meta:hover,
+.listing-item .listing-content h3.title:hover,
+.single-checkbox label:after,
+.newsletter-wrapper .newsletter-form i,
+.intro-wrppaer-two .play-content .video-popup,
+.intro-wrapper-one .play-content-one .video-popup i,
+.counter-item-one .info h3,
+ul.ratings.ratings-five li.star:nth-child(5) i,
+ul.ratings.ratings-five li.star:nth-child(4) i,
+ul.ratings.ratings-five li.star:nth-child(3) i,
+ul.ratings.ratings-five li.star:nth-child(2) i,
+ul.ratings.ratings-five li.star:nth-child(1) i,
+ul.ratings.ratings-four li.star:nth-child(4) i,
+ul.ratings.ratings-four li.star:nth-child(3) i,
+ul.ratings.ratings-four li.star:nth-child(2) i,
+ul.ratings.ratings-four li.star:nth-child(1) i,
+ul.ratings.ratings-three li.star:nth-child(3) i,
+ul.ratings.ratings-three li.star:nth-child(2) i,
+ul.ratings.ratings-three li.star:nth-child(1) i,
+ul.ratings.ratings-two li.star:nth-child(2) i,
+ul.ratings.ratings-two li.star:nth-child(1) i,
+ul.ratings.ratings-one li.star:nth-child(1) i,
+.work-process-wrapper .single-process-step .process-content-box .step-count,
+.icon-box-one .icon i,
+.features-item-two .icon i,
+.features-item-one .icon i,
+.category-item-three:hover .info h4.title,
+.category-item-three:hover .icon i,
+.category-item-one:hover .info .icon i,
+.hero-wrapper-three .hero-content p.tags span,
+.header-area .header-top .top-right ul li a:hover,
+.header-area .header-top .top-content p a,
+.header-area .header-top .top-social ul.social-link li a:hover,
+.section-title span.sub-title {
+    color: #ff344f;
+}
+
+.copyright-area .copyright-text p span,
+.hero-wrapper-two .hero-content p.tags span {
+    color: #fff;
+}
+.contact-information-list .information-item .icon,
+.footer-widget .widget.about-widget .footer-social ul.social-link li a:hover,
+.sidebar-widget-area .widget.contact-info-widget .contact-info-content .social-link li a:hover,
+.sidebar-widget-area .widget.contact-info-widget .contact-map .support-icon,
+.sidebar-widget-area .widget.tag-cloud-widget a:hover,
+.sidebar-widget-area .widget.categories-widget .categories-nav li a:hover,
+.blog-details-wrapper .comments-respond .single-checkbox input:checked+label:before,
+.blog-details-wrapper .entry-content .post-tag a:hover,
+.blog-details-wrapper .entry-content .post-meta,
+.blog-post-item-four .entry-content .cat-btn,
+.description-wrapper .description-tabs .nav-tabs .nav-link:after,
+.product-details-wrapper .products-gallery-slider .slick-arrow,
+.products-item-one .product-img .product-overlay .product-meta .icon:hover,
+.products-filter .list li a.active,
+.products-filter .list li a:hover,
+.place-item-two .place-thumbnail .place-overlay .place-content .icon,
+.place-item-two .place-thumbnail .place-overlay .place-content .info span.span:before,
+.place-item-one .place-thumbnail .place-content span.listing,
+.add-listing-form h4.title:after,
+.add-listing-form h4.title:before,
+.listing-details-wrapper.listing-details-wrapper-two .listing-info-area .button .icon-btn:hover,
+.listing-details-wrapper .listing-rating-box .single-average-rating span.rating,
+.listing-details-wrapper .listing-tag-box a:hover,
+.listing-list-item-two .listing-thumbnail .thumbnail-meta .meta-icon-title .icon,
+.listing-list-item-one .listing-thumbnail .cat-btn,
+.listing-tab-filter .nav-link.active,
+.listing-grid-item-two .listing-thumbnail .cat-btn,
+.listing-grid-one .listing-thumbnail .thumbnail-meta .meta-icon-title .icon,
+.listing-slider-one .slick-arrow:hover,
+.listing-search-filter .filter-right ul.filter-nav li a.active,
+.listing-search-filter .filter-right ul.filter-nav li a:hover,
+.featured-btn,
+.fioxen-pagination .pagination-list li a.active,
+.fioxen-pagination .pagination-list li a:hover,
+.single-checkbox input:checked+label:before,
+.amenities-content-box-one ul.button li .app-btn:hover,
+.features-list-one .list-item .icon,
+.category-item-three .info h4.title a:after,
+.category-item-one .category-btn,
+.breadcrumbs-wrapper-one .button .icon-btn:hover,
+.hero-wrapper-three .hero-search-wrapper .search-nav .nav-link.active {
+    background-color: #ff344f;
+}
+
+.products-item-one .product-img .product-overlay .product-meta .icon,
+.products-filter .list li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
