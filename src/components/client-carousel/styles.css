@@ -1,0 +1,71 @@
+/* Client CSS */
+
+.client-wrapper-one {
+    border-bottom: 5px solid #e9eaec;
+}
+
+.client-wrapper-one .client-slider-one .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.client-wrapper-one .client-item {
+    padding: 0 20px;
+}
+
+.client-wrapper-one .client-item:hover .client-img img {
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.client-wrapper-one .client-item .client-img a {
+    display: block;
+}
+
+.client-wrapper-one .client-item .client-img img {
+    margin: auto;
+    opacity: 0.5;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.client-wrapper-two .client-content-box {
+    padding-right: 30px;
+}
+
+.client-wrapper-two .client-content-box p {
+    margin-bottom: 30px;
+}
+
+.client-wrapper-two .client-content-box .main-btn {
+    background-color: #ffd74e;
+    color: #0d0d0d;
+}
+
+.client-wrapper-two .client-item-wrapper {
+    padding-left: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.client-wrapper-two .client-item-wrapper .client-item-two {
+    padding: 35px 45px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    text-align: center;
+}

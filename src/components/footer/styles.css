@@ -1,3 +1,7 @@
+.background-housr {
+    background: url(./images/theme-color-a-bg-grad.jpeg) no-repeat center center;
+}
+
 .footer-widget .widget h4.widget-title {
     margin-bottom: 20px;
 }
@@ -77,7 +81,7 @@
 
 .footer-widget .widget.categories-widget ul.categories-link li a:before {
     display: inline-block;
-    content: "î™‰";
+    content: "\e649";
     font-family: "themify";
     margin-right: 10px;
     font-size: 10px;
