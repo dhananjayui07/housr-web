@@ -1,0 +1,145 @@
+.newsletter-wrapper {
+    background-image: url(./images/newsletter-bg-1.jpeg);
+    background-repeat: no-repeat;
+}
+.newsletter-wrapper .newsletter-content-box-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+@media (max-width: 991px) {
+    .newsletter-wrapper .newsletter-content-box-one {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .newsletter-wrapper .newsletter-content-box-one {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+.newsletter-wrapper .newsletter-content-box-one .icon {
+    min-width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+.newsletter-wrapper .newsletter-content-box-one .icon img {
+    width: 90px;
+    height: 90px;
+}
+
+@media (max-width: 767px) {
+    .newsletter-wrapper .newsletter-content-box-one .icon {
+        margin-right: 0px;
+    }
+}
+
+.newsletter-wrapper .newsletter-content-box-one .content {
+    margin-top: -12px;
+}
+.newsletter-wrapper .newsletter-content-box-one .content .title-text {
+    font-size: 36px; 
+    line-height:46px;
+}
+@media (max-width: 767px) {
+    .newsletter-wrapper .newsletter-content-box-one .content {
+        text-align: center;
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .newsletter-wrapper .newsletter-content-box-one .content h2 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
+
+.newsletter-wrapper .newsletter-form .form_control {
+    height: 75px;
+    padding: 0 20px 0 40px;
+}
+
+.newsletter-wrapper .newsletter-form i {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+.newsletter-wrapper .newsletter-form .main-btn {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    background-color: #0d0d0d;
+}
+
+@media (max-width: 767px) {
+    .newsletter-wrapper .newsletter-form .main-btn {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 20px;
+    }
+}
+
+.newsletter-wrapper-one {
+    position: relative;
+    padding: 55px 50px 32px;
+    margin-top: -60px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .newsletter-wrapper-one {
+        padding: 75px 30px 62px;
+    }
+}
+
+@media (max-width: 991px) {
+    .newsletter-wrapper-one {
+        padding: 75px 30px 62px;
+    }
+}
+
+@media (max-width: 767px) {
+    .newsletter-wrapper-one {
+        padding: 75px 15px 62px;
+    }
+}
+
+.newsletter-wrapper-one .newsletter-form .form_control {
+    max-width: 510px;
+}
+
+.newsletter-wrapper-two {
+    padding-bottom: 63px;
+}
+
+.newsletter-wrapper-two .newsletter-form .form_control {
+    max-width: 100%;
+}
+
+.newsletter-wrapper-two .newsletter-form .main-btn {
+    right: 10px;
+}

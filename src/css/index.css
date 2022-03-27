@@ -31,6 +31,8 @@ INDEX
 ==========================*/
 
 @import "./themify-icons.css"; 
+@import "./default.css"; 
+@import "./moonicon.css"; 
 
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&family=Work+Sans:wght@300;400;500;600;700&display=swap");
 html {
@@ -150,6 +152,9 @@ body {
     line-height: 24px;
     overflow-x: hidden;
 }
+.rcol {
+    color: #e73943!important;
+}
 
 @media (min-width: 1200px) {
     .container {
@@ -198,7 +203,11 @@ textarea.form_control {
     font-weight: 600;
     position: relative;
 }
-
+.section-title h2 span.title-text-outline {
+    border: 1px solid #e73943;
+    padding: 20px 5px 0px 60px;
+    margin-right:10px;
+}
 .section-title span.sub-title:after,
 .section-title span.sub-title:before {
     display: inline-block;
@@ -226,7 +235,21 @@ textarea.form_control {
     margin-bottom: 20px;
     font-weight: 700;
 }
+.btn-link {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    color: #676767;
+}
 
+.btn-link:after {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .section-title h2 {
         font-size: 32px;
@@ -314,7 +337,7 @@ button {
     width: 100%;
     height: 100%;
     content: "";
-    /* background: url(../images/bg/colorful-bg.jpg) no-repeat center right; */
+    background: url(../img/colorful-bg.jpeg) no-repeat center right;
     z-index: -1;
     -webkit-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
