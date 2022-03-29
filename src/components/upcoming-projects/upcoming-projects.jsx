@@ -1,11 +1,12 @@
 import React from "react";
-import Slider from "react-slick";
+import PropTypes from "prop-types";
 import PropertyCard from "../property-card/property-card";
 import styles from "./styles.css";
 
 import PropertyOne from "./images/listing-grid-1.jpeg";
 import PropertyTwo from "./images/New1.jpeg";
 import PropertyThree from "./images/New2.jpeg";
+import SectionHeader from "../shared/section-header/section-header";
 
 const UPCOMING_PROPERTIES_DATA = [
     {
@@ -28,101 +29,47 @@ const UPCOMING_PROPERTIES_DATA = [
         categorytext: "Homes",
         propertyName: "Housr Malibu Sec 47, Good Earth City Centre",
         cityText: "Gurgaon"
-    },
-    {
-        id: 4,
-        imgPath: PropertyOne,
-        categorytext: "Co-Living",
-        propertyName: "Housr Malibu Sec 47, Good Earth City Centre",
-        cityText: "Gurgaon"
-    },
-    {
-        id: 5,
-        imgPath: PropertyTwo,
-        categorytext: "Homes",
-        propertyName: "Housr Malibu Sec 47, Good Earth City Centre",
-        cityText: "Gurgaon"
-    },
-    {
-        id: 6,
-        imgPath: PropertyThree,
-        categorytext: "Co-Living",
-        propertyName: "Housr Malibu Sec 47, Good Earth City Centre",
-        cityText: "Gurgaon"
     }
 ]
 
 
-function UpcomingProjects() {
-    const settings = {
-        dots: false,
-        arrows: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        autoplay: false,
-        slidesToScroll: 1,
-        responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: false
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                initialSlide: 2
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-        ]
-    };
+function UpcomingProjects({ hasBackground= false }) {
 
     return(
         <React.Fragment>
-            <section className="listing-grid-area pt-75 pb-110">
+            <section className={ hasBackground ? "listing-grid-area pt-115 pb-75 bg_cover background-bg" : "listing-grid-area pt-115 pb-75"}>
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <div className="section-title text-center mb-60 wow fadeInUp">
-                                <h2 className="mb-1 rcol font-weight-normal"> <span className="title-text-outline font-weight-bolder">Upcoming</span>Projects</h2>
-                                <h3 className="sub-title mb-10 font-weight-normal">Housr Properties</h3>
+                                <SectionHeader text="Upcoming" subtext="Housr Properties" />
                             </div>
                         </div>
                     </div>
-                    <div className="listing-slider-one upcoming-slider wow fadeInDown">
-                        <Slider {...settings}>
-                            {
-                                UPCOMING_PROPERTIES_DATA.map((item, index) => {
-                                    return (
+                    <div className="property-row row wow fadeInDown">
+                        {
+                            UPCOMING_PROPERTIES_DATA.map((item, index) => {
+                                return (
+                                    <div key={index} className="col-lg-4 col-xs-12 px-0">
                                         <PropertyCard
-                                            key={index}
                                             imgPath={item.imgPath}
                                             categorytext={item.categorytext}
                                             propertyName={item.propertyName}
                                             cityText={item.cityText}
                                         />
-                                    );
-                                })
-                            }
-                        </Slider>
+                                    </div>
+                                );
+                            })
+                        }
                     </div>
                 </div>
             </section>
         </React.Fragment>
     );
 }
+
+UpcomingProjects.propTypes = {
+    hasBackground: PropTypes.bool
+};
 
 export default UpcomingProjects;

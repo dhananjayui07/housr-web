@@ -9,7 +9,8 @@ import PropertyTwo from "./images/New1.jpeg";
 import PropertyThree from "./images/New2.jpeg";
 import SectionHeader from "../shared/section-header/section-header";
 
-const NEW_LAUNCHED_PROPERTIES_DATA = [
+
+const PREMIUM_PROPERTIES_DATA = [
     {
         imgPath: PropertyOne,
         categorytext: "Homes",
@@ -27,11 +28,29 @@ const NEW_LAUNCHED_PROPERTIES_DATA = [
         categorytext: "Homes",
         propertyName: "Housr Malibu Sec 47, Good Earth City Centre",
         cityText: "Gurgaon"
+    },
+    {
+        imgPath: PropertyOne,
+        categorytext: "Co-Living",
+        propertyName: "Housr Malibu Sec 47, Good Earth City Centre",
+        cityText: "Gurgaon"
+    },
+    {
+        imgPath: PropertyTwo,
+        categorytext: "Homes",
+        propertyName: "Housr Malibu Sec 47, Good Earth City Centre",
+        cityText: "Gurgaon"
+    },
+    {
+        imgPath: PropertyThree,
+        categorytext: "Co-Living",
+        propertyName: "Housr Malibu Sec 47, Good Earth City Centre",
+        cityText: "Gurgaon"
     }
 ]
 
 
-function NewLaunchedProjects({ hasBackground= false }) {
+function PremiumProjects({ hasBackground= false }) {
     const settings = {
         dots: false,
         arrows: true,
@@ -70,19 +89,19 @@ function NewLaunchedProjects({ hasBackground= false }) {
 
     return(
         <React.Fragment>
-            <section className={ hasBackground ? "listing-grid-area pt-75 pb-110 bg_cover background-bg" : "listing-grid-area pt-75 pb-110"}>
+            <section className={ hasBackground ? "listing-grid-area pt-75 pb-110 background-bg" : "listing-grid-area pt-75 pb-110"}>
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <div className="section-title text-center mb-60 wow fadeInUp">
-                                <SectionHeader text="Newly Launched" subtext="Housr Properties" />
+                                <SectionHeader text="Premium" subtext="Housr Properties" />
                             </div>
                         </div>
                     </div>
-                    <div className="listing-slider-one newly-launched-slider wow fadeInDown">
+                    <div className="listing-slider-one most-searched-slider wow fadeInDown">
                         <Slider {...settings}>
                             {
-                                NEW_LAUNCHED_PROPERTIES_DATA.map((item, index) => {
+                                PREMIUM_PROPERTIES_DATA.map((item, index) => {
                                     return (
                                         <PropertyCard
                                             key={index}
@@ -102,8 +121,8 @@ function NewLaunchedProjects({ hasBackground= false }) {
     );
 }
 
-NewLaunchedProjects.propTypes = {
+PremiumProjects.propTypes = {
     hasBackground: PropTypes.bool
 };
 
-export default NewLaunchedProjects;
+export default PremiumProjects;

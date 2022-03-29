@@ -1,0 +1,103 @@
+.amenities-wrapper-one {
+    position: relative;
+    z-index: 1;
+}
+
+.amenities-wrapper-one:after {
+    position: fixed;
+    content: "";
+    width: 100%;
+    height: 560px;
+    /* background: url(../images/bg/pattern-bg-1.jpg) no-repeat; */
+    background-size: cover;
+    z-index: -1;
+}
+
+.amenities-content-box-one p {
+    margin-bottom: 50px;
+}
+
+.amenities-content-box-one ul.button li {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.amenities-content-box-one ul.button li .app-btn {
+    background-color: #ffd74e;
+}
+
+.amenities-content-box-one ul.button li .app-btn:hover .icon i {
+    color: #fff;
+}
+.amenities-content-box-one ul.button li .app-btn .info span {
+    color: #0d0d0d;
+}
+
+.amenities-app .features-list-one .list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    min-height: 165px;
+}
+
+.amenities-app .features-list-one .list-item:last-child {
+    margin-bottom: 0px;
+}
+
+.amenities-app .features-list-one .list-item .icon {
+    position: relative;
+    min-width: 60px;
+    max-width: 60px;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right: 30px;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-color: #efefef;
+}
+
+.amenities-app .features-list-one .list-item .icon:before {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    content: "";
+    width: 60px;
+    height: 60px;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+}
+.amenities-app .features-list-one .list-item .icon img {
+    max-height: 60px;
+    width: auto;
+}
+
+.amenities-app .features-list-one .list-item .icon i {
+    line-height: 1;
+    font-size: 40px;
+}
+.amenities-app .features-list-one .list-item .content h5 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.amenities-app .features-list-one .list-item .content p {
+    color: #676767;
+    margin-bottom: 0px;
+}
+
+.amenities-icon{ background:#fff; border-radius: 10px; padding: 20px; margin:5px; -webkit-box-shadow: 0px 2px 2px 0px #CCCCCC;}
+.amenities-icon img{width: 60px; height: 60px; margin-bottom: 10px;}
+.amenities-bg{background:#e4e4e4;}

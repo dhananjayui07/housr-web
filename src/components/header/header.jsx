@@ -8,7 +8,7 @@ function Header() {
   return (
     <React.Fragment>
       <header className="header-area header-area-two">
-          <div className="header-navigation sticky">
+          <div className="header-navigation">
               <div className="container-fluid">
                   <div className="primary-menu">
                       <div className="row align-items-center">
@@ -35,7 +35,7 @@ function Header() {
                                           </li>
                                           <li className="menu-item has-children"><NavLink to="/about">Category</NavLink>
                                               <ul className="sub-menu">
-                                                  <li className="menu-item"><NavLink to="/">Housr Co-living</NavLink></li>
+                                                  <li className="menu-item"><NavLink to="/housr-coliving">Housr Co-living</NavLink></li>
                                                   <li className="menu-item"><NavLink to="/">Housr Homes</NavLink></li>
                                                   <li className="menu-item"><NavLink to="/">StayAbode by Housr</NavLink></li>
                                               </ul>

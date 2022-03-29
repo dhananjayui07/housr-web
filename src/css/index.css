@@ -231,10 +231,10 @@ textarea.form_control {
     display: none;
 }
 
-.section-title h2 {
+/* .section-title h2 {
     margin-bottom: 20px;
     font-weight: 700;
-}
+} */
 .btn-link {
     font-family: "Work Sans", sans-serif;
     font-weight: 700;
