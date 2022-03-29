@@ -983,3 +983,13 @@
         line-height: 30px;
     }
 }
+
+.head-select > div.css-1s2u09g-control {
+    border: solid 1px #e8e8e8;
+    /* height: 44px; */
+    /* border-radius: 50px;
+    padding-left: 12px; */
+}
+.head-select .css-1hb7zxy-IndicatorsContainer span {
+    display: none;
+}
