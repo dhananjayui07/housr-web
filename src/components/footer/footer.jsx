@@ -22,9 +22,9 @@ function Footer() {
                                 <h5 className="text-white">Follow Us</h5>
                                 <ul className="social-link">
                                   <li><NavLink to="/"><i className="ti-facebook"></i></NavLink></li>
-                                  <li><NavLink to="/"><i className="ti-twitter-alt"></i></NavLink></li>
-                                  <li><NavLink to="/"><i className="ti-pinterest"></i></NavLink></li>
                                   <li><NavLink to="/"><i className="ti-instagram"></i></NavLink></li>
+                                  <li><NavLink to="/"><i className="ti-twitter-alt"></i></NavLink></li>
+                                  <li><NavLink to="/"><i className="ti-linkedin"></i></NavLink></li>
                                 </ul>
                             </div>
                         </div>
@@ -32,7 +32,7 @@ function Footer() {
                             <div className="copyright-link">
                                 <ul>
                                   <li><NavLink to="/">Terms & Conditions</NavLink></li>
-                                  <li><NavLink to="/">Services</NavLink></li>
+                                  {/* <li><NavLink to="/">Services</NavLink></li> */}
                                   <li><NavLink to="/">Career</NavLink></li>
                                 </ul>
                             </div>

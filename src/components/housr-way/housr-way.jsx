@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.css";
-import IntroVideo from "./images/brand-vedio-for-website.mp4";
+import IntroVideo from "../../img/brand-vedio-for-website.mp4";
 
 function HousrWay() {
     return(
@@ -18,12 +18,12 @@ function HousrWay() {
                         </div>
                         <div className="row align-items-center">
                             <div className="col-lg-8 embed-responsive embed-responsive-16by9">
-                            <video controls autoplay muted>
+                            <video controls muted>
                                 <source src={IntroVideo} type="video/mp4"/>
                             </video>
                             </div>
                             <div className="col-lg-4">
-                            <div class="intro-content-box pt-20 intro-content-box-one wow fadeInRight">
+                            <div className="intro-content-box pt-20 intro-content-box-one wow fadeInRight">
                                 <h5>Choose your style of living</h5>
                                 <p>A well furnished , functional and fully managed co-living and personalised home for everyone out there.</p>
                                 <h5>We know what you want </h5>

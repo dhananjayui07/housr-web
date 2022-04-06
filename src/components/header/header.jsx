@@ -1,14 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "./styles.css";
 import { NavLink } from "react-router-dom";
 import LogoImage from "./images/logo-housr.png";
 import HeaderSearch from './header-search';
 
 function Header() {
+
+
+  // sticky Nav
+  const [navBar, setNavBar] = useState(false);
+
+  const navbarSticky = () => {
+    if (window.scrollY >= 120) {
+      setNavBar(true);
+    } else {
+      setNavBar(false);
+    }
+  }
+  window.addEventListener('scroll', navbarSticky);
+
+  // menu toggle
+  const [toggleNav, setToggleNav] = useState(false);
+  const ToggleNav = () => {
+    setToggleNav(!toggleNav);
+  }
+  
+
   return (
     <React.Fragment>
       <header className="header-area header-area-two">
-          <div className="header-navigation">
+          <div className={navBar ? 'header-navigation sticky' : 'header-navigation'}>
               <div className="container-fluid">
                   <div className="primary-menu">
                       <div className="row align-items-center">
@@ -20,9 +41,9 @@ function Header() {
                               </div>
                           </div>
                           <div className="col-lg-7 col-2">
-                              <div className="nav-menu float-right">
-                                  <div className="navbar-close"><i className="ti-close" /></div>
-                                  <nav className="main-menu">
+                              <div className={toggleNav ? "nav-menu float-right menu-on" : "nav-menu float-right"}>
+                                  <div className="navbar-close" onClick={ToggleNav}><i className="ti-close" /></div>
+                                  <nav className={navBar ? 'main-menu hide' : 'main-menu'}>
                                       <ul>
                                           <li className="menu-item">
                                             <NavLink className="navbar-brand" to="/">
@@ -33,14 +54,14 @@ function Header() {
                                           <li className="menu-item">
                                             <NavLink className="nav-link" to="/about">About Us</NavLink>
                                           </li>
-                                          <li className="menu-item has-children"><NavLink to="/about">Category</NavLink>
+                                          <li className="menu-item has-children"><a href={void(0)} >Category</a>
                                               <ul className="sub-menu">
                                                   <li className="menu-item"><NavLink to="/housr-coliving">Housr Co-living</NavLink></li>
-                                                  <li className="menu-item"><NavLink to="/">Housr Homes</NavLink></li>
-                                                  <li className="menu-item"><NavLink to="/">StayAbode by Housr</NavLink></li>
+                                                  <li className="menu-item"><NavLink to="/housr-homes">Housr Homes</NavLink></li>
+                                                  <li className="menu-item"><NavLink to="/stay-abode">StayAbode by Housr</NavLink></li>
                                               </ul>
                                           <span className="dd-trigger"><i className="ti-arrow-down"></i></span></li>
-                                          <li className="menu-item has-children"><NavLink to="/about">Locations</NavLink>
+                                          <li className="menu-item has-children"><a href={void(0)} >Locations</a>
                                               <ul className="sub-menu">
                                                   <li className="menu-item"><NavLink to="/">Gurgaon</NavLink></li>
                                                   <li className="menu-item"><NavLink to="/">Hyderabad</NavLink></li>
@@ -50,13 +71,13 @@ function Header() {
                                               </ul>
                                           <span className="dd-trigger"><i className="ti-arrow-down"></i></span></li>
                                           <li className="menu-item">
-                                            <NavLink className="nav-link" to="/about">Housr Way</NavLink>
+                                            <NavLink className="nav-link" to="/housr-way">Housr Way</NavLink>
                                           </li>
                                           <li className="menu-item">
-                                            <NavLink className="nav-link" to="/about">Offers</NavLink>
+                                            <NavLink className="nav-link" to="/offers">Offers</NavLink>
                                           </li>
                                           <li className="menu-item">
-                                            <NavLink className="nav-link" to="/">Blog</NavLink>
+                                            <NavLink className="nav-link" to="/blog">Blog</NavLink>
                                           </li>
                                       </ul>
                                   </nav>
@@ -67,7 +88,7 @@ function Header() {
                                   <ul className="d-flex align-items-center">
                                       <li className="hero-nav-btn"><span className="main-btn">Request Call</span></li>
                                       <li className="nav-toggle-btn">
-                                          <div className="navbar-toggler">
+                                          <div className={toggleNav ? "navbar-toggler active" : "navbar-toggler"} onClick={ToggleNav}>
                                               <span />
                                               <span />
                                               <span />

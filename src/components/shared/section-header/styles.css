@@ -14,3 +14,9 @@
     color: #0d0d0d;
     font-family: "Work Sans", sans-serif;
 }
+@media (max-width: 767px) {
+    .section-heading-sub-text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

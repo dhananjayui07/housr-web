@@ -4,3 +4,5 @@ export { default as Home } from "./home/Home";
 export { default as About } from "./about/About";
 export { default as Contact } from "./contact/Contact";
 export { default as HousrColiving } from "./category/housr-coliving";
+export { default as HousrHomes } from "./category/housr-homes";
+export { default as HousrStayAbode } from "./category/housr-stay-abode";

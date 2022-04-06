@@ -56,7 +56,7 @@ function MostSearchedProjects({ hasBackground= false }) {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        autoplay: false,
+        autoplay: true,
         slidesToScroll: 1,
         responsive: [
             {
@@ -73,14 +73,18 @@ function MostSearchedProjects({ hasBackground= false }) {
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
-                initialSlide: 2
+                initialSlide: 2,
+                arrows: false,
+                dots: true
               }
             },
             {
               breakpoint: 480,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true
               }
             }
         ]

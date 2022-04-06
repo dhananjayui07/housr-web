@@ -1,34 +1,10 @@
 @charset "UTF-8";
-
 /*
 Application Name: Housr - Fully furnished rooms for healthy, hygienic, happy living
 URL: Housr.in
 Description: Housr - Fully furnished rooms for healthy, hygienic, happy living
 Author: Dhananjay Kumar
-Version: 1.0
-
-INDEX
-
-01. Theme default css
-02. Header css
-03. Hero css
-04. Category CSS
-05. Features css
-06. Elements css
-07. Listing css
-08. Place css
-09. Products css
-10. Testimonial css
-11. Team css
-12. Blog css
-13. Widget css
-14. Footer css
-15. Contact css
 */
-
-/*=========================
-1. Start COMMON css 
-==========================*/
 
 @import "./themify-icons.css"; 
 @import "./default.css"; 
@@ -759,4 +735,162 @@ ul.ratings.ratings-one li.star:nth-child(1) i,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+}
+/* slick slider dots styles */
+.slick-dots {}
+.slick-dots li {
+    margin: 0;
+}
+.slick-dots li button {
+    background: #ccc;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.slick-dots li button::before {
+    display: none;
+}
+.slick-dots li.slick-active button {
+    background-color: #ff344f;
+}
+
+
+/** Bootstrap changes **/
+
+.btn-danger {
+    background: #ff344f;
+}
+
+.hero-slider-wrapper .hero-content .hero-search-wrapper .row {
+    justify-content: space-evenly;
+    margin: 0;
+    grid-gap: 1px;
+}
+
+.header-area-two .header-navigation {
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
+}
+
+.header-area-two .header-navigation.sticky {
+    padding: 20px;
+    -webkit-box-shadow: 0 1px 15px rgb(0 0 0 / 3%);
+    box-shadow: 0 1px 15px rgb(0 0 0 / 3%);
+}
+
+.searchWrap .form_group {
+    width: auto;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-slider-wrapper.sticky {
+    max-width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    z-index: 100;
+}
+
+.hero-slider-wrapper.sticky .hero-content {
+    width: 100%;
+}
+
+.cityWrap {
+    width: 41%;
+}
+
+.categoryWrap {
+    width: 41%;
+}
+
+.searchWrap {
+    width: 15%;
+}
+
+.hero-slider-wrapper.sticky .hero-content.menu-on {
+    display: none;
+}
+
+.ti-search::after {
+    content: "\e610";
+    font-family: 'themify';
+    font-size: 18px;
+    font-weight: 700;
+    -webkit-transform: none;
+    transform: none;
+    border: none;
+    line-height: 0;
+    margin-top: 0;
+    color: #fff;
+}
+
+.ti-search::before,
+.ti-search::after {
+    content: none;
+}
+.f_toggle i{font-size: 12px; padding-top: 10px; display:none;}
+
+
+@media (max-width: 767px) {
+	.hero-slider-wrapper.sticky,
+    .hero-slider-wrapper.sticky>div,
+    .hero-slider-wrapper.sticky .hero-content .hero-search-wrapper {
+		margin-left: -20px;
+		transition: background 0.3s easeIn;
+	}
+    .listing-grid-item-two .listing-content {
+        padding: 20px 20px 25px;
+    }
+    .listing-meta .btn {
+        font-size: 0.7rem;
+        line-height: 1.2;
+    }
+    .testimonials_one .owl-item {
+        padding-top: 80px;
+    }
+    .testimonials_one_single {
+        padding: 40px 25px 30px;
+    }
+    .testimonials_one_image {
+        top: -60px;
+        left: 50%;
+        margin-left: -55px;
+    }
+    .testimonials_one_single:after {
+        left: 5px;
+    }
+    .testimonials_quote_icon span {
+        font-size: 40px;
+        right: -29px;
+    }
+    .hero-slider-wrapper .hero-content .hero-search-wrapper .row {
+        grid-gap: 1px;	
+    }
+    .fnc-slide__heading-line {
+        font-size: 28px !important;
+    }
+    .rblack {
+        line-height: 20px;
+    }
+    .hero-slider-wrapper {
+        top: 15%;
+    }
+    h3 {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        margin-top: -5px;
+        line-height: 24px;
+    }
+    section.listing-grid-area, 
+    .intro-wrapper-one, 
+    .amenities-wrapper-one {
+        padding: 50px 0 !important;
+    }
 }

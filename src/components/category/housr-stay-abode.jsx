@@ -10,26 +10,26 @@ import AmenitiesColiving from "../amenities-coliving/amenities-coliving";
 import PremiumProjects from "../premium-projects/premium-projects";
 import HelpRequestCtaSection from "../help-request-cta-section/help-request-cta-section";
 import BannerInnereLanding from "../banner-inner-landing/banner-inner-landing";
-import BannerColiving from "./images/co-living.jpeg";
+import BannerStayAbode from "./images/stay-abode.jpeg";
 import ThreeStepsBooking from "../three-steps-booking/three-steps-booking";
 
 
-function HousrColiving() {
+function HousrStayAbode() {
 
   return (
     <React.Fragment>
-      <BannerInnereLanding imgSrc={BannerColiving} />
+      <BannerInnereLanding imgSrc={BannerStayAbode} />
       <section className="coliving">
         <div className="pt-40 pb-40">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8">
                 <div className="section-title text-center mb-30 wow fadeInUp">
-                  <h2 className="rcol">Housr Co-living</h2>
+                  <h2 className="rcol">StayAbode by Housr</h2>
                 </div>
               </div>
               <div className="col-lg-12 col-md-12 col-sm-12 description-content-box">
-                <p className="pb-15 text-center">Housr has the largest portfolio of fully aggregated co-living properties in India. The company provides Single Rooms, Studios and Twin Sharing accommodations that are fully furnished and serviced for working professionals and students.Through full-stack operations and with the use of cutting-edge technology, Housr delivers a community living experience never seen or experienced in the country before. </p>
+                <p className="pb-15 text-center">Fully furnished and managed 1,2 & 3 BHK residences across prime locations close to working hubs and commercial spaces. HH ensures your living in a new city is completely hassle free with high safety standards and premium services.These are specifically designed to cater to couples, small families, bachelors and urban millennials.</p>
               </div>
             </div>
           </div>
@@ -49,4 +49,4 @@ function HousrColiving() {
   );
 }
 
-export default HousrColiving;
+export default HousrStayAbode;

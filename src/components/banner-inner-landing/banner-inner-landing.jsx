@@ -5,9 +5,9 @@ import styles from "./styles.css";
 function BannerInnereLanding({ imgSrc }) {
     return(
         <React.Fragment>
-            <section class="inner-banners">
-                <div class="container-fluid">
-                    <div class="row description-wrapper"> <img src={imgSrc} alt="" /> </div>
+            <section className="inner-banners">
+                <div className="container-fluid">
+                    <div className="row description-wrapper"> <img src={imgSrc} alt="" /> </div>
                 </div>
             </section>
         </React.Fragment>

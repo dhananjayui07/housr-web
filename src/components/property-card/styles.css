@@ -132,3 +132,8 @@ h3.title {
     top: 25px;
     right: 20px;
 }
+@media (max-width: 480px) {
+    .listing-grid-item-two .listing-content {
+        padding: 20px 16px 25px;
+    }
+}

@@ -7,6 +7,7 @@ import Rohit from "./images/rohit-sharma.png";
 import Ritika from "./images/ritika.png";
 import TestimonialCard from "./testimonial-card";
 import Slider from "react-slick";
+import SectionHeader from "../shared/section-header/section-header";
 
 const TESTIMONIAL_DATA =[
     {
@@ -73,9 +74,7 @@ function Testimonials() {
             <div className="testimonial_one_map" />
             <div className="container-box">
                 <div className="section-title text-center pb-50">
-                    <h2 className="mb-1 rcol"> <span className="title-text-outline">Our</span>Testimonials
-                    </h2>
-                    <h3 className="sub-title mb-10 font-weight-normal">Our Happy Housr Clan</h3>
+                    <SectionHeader text="Our Testimonials" subtext="Our Happy Housr Clan" />
                 </div>
                 <div className="row">
                     <div className="col-xl-12">
