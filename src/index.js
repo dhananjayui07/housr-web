@@ -12,6 +12,9 @@ import Footer from "./components/footer/footer";
 import Home from "./components/home/home";
 import About from "./components/about/about";
 import Contact from "./components/contact/contact";
+import HousrColiving from "./components/category/housr-coliving";
+import HousrHomes from "./components/category/housr-homes";
+import HousrStayAbode from "./components/category/housr-stay-abode";
 
 
 ReactDOM.render(
@@ -21,6 +24,9 @@ ReactDOM.render(
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/housr-coliving" element={<HousrColiving />} />
+      <Route path="/housr-homes" element={<HousrHomes />} />
+      <Route path="/stay-abode" element={<HousrStayAbode />} />
     </Routes>
     <Footer />
   </Router>,

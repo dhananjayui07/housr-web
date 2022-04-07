@@ -1,0 +1,11 @@
+.team-area {
+    background: url(./images/team.jpeg);
+}
+.team-image {
+    padding:10px; 
+    border:1px solid #e4e4e4;
+}
+.features-content-box-one h5 {
+    color: #ff344f;
+    font-weight: 500;
+}

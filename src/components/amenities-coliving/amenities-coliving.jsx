@@ -13,18 +13,18 @@ import SafeSecure from "./images/safe-secure.png";
 import SmartLiving from "./images/smart-living.png";
 import WashingMachine from "./images/washing-machine.png";
 import Wifi from "./images/wifi.png";
+import SectionHeader from "../shared/section-header/section-header";
 
-function Amenities() {
+function AmenitiesColiving() {
     return(
-        <section className="amenities-app">
-            <div className="amenities-wrapper-one pt-100 pb-40">
+        <section className="amenities-app amenities-bg">
+            <div className="amenities-wrapper-one pt-50 pb-50">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="amenities-content-box amenities-content-box-one">
                                 <div className="section-title section-title-left mb-75 wow fadeInUp text-center">
-                                    <h2 className="mb-1 rcol"> <span className="title-text-outline">Housr</span>Amenities</h2>
-                                    <h3 className="sub-title mb-10 font-weight-normal">Everything you need to live better, Safer, Healthier</h3>
+                                    <SectionHeader text="Housr Amenities" subtext="Everything you need to live better, Safer, Healthier" />
                                 </div>
                                 <div className="col-lg-12">
                                     <ul className="features-list-one ">
@@ -110,4 +110,4 @@ function Amenities() {
         </section>
     );
 }
-export default Amenities;
+export default AmenitiesColiving;

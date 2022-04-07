@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Slider from "react-slick";
 import PropertyCard from "../property-card/property-card";
 import styles from "./styles.css";
@@ -6,6 +7,7 @@ import styles from "./styles.css";
 import PropertyOne from "./images/listing-grid-1.jpeg";
 import PropertyTwo from "./images/New1.jpeg";
 import PropertyThree from "./images/New2.jpeg";
+import SectionHeader from "../shared/section-header/section-header";
 
 const SEARCHED_PROPERTIES_DATA = [
     {
@@ -47,14 +49,14 @@ const SEARCHED_PROPERTIES_DATA = [
 ]
 
 
-function MostSearchedProjects() {
+function MostSearchedProjects({ hasBackground= false }) {
     const settings = {
         dots: false,
         arrows: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        autoplay: false,
+        autoplay: true,
         slidesToScroll: 1,
         responsive: [
             {
@@ -71,14 +73,18 @@ function MostSearchedProjects() {
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
-                initialSlide: 2
+                initialSlide: 2,
+                arrows: false,
+                dots: true
               }
             },
             {
               breakpoint: 480,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true
               }
             }
         ]
@@ -86,13 +92,12 @@ function MostSearchedProjects() {
 
     return(
         <React.Fragment>
-            <section className="listing-grid-area pt-75 pb-110">
+            <section className={ hasBackground ? "listing-grid-area pt-75 pb-110 bg_cover background-bg" : "listing-grid-area pt-75 pb-110"}>
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <div className="section-title text-center mb-60 wow fadeInUp">
-                                <h2 className="mb-1 rcol"> <span className="title-text-outline font-weight-bolder">Most</span>Searched</h2>
-                                <h3 className="sub-title mb-10 font-weight-normal">Housr Properties</h3>
+                                <SectionHeader text="Most Searched" subtext="Housr Properties" />
                             </div>
                         </div>
                     </div>
@@ -118,5 +123,9 @@ function MostSearchedProjects() {
         </React.Fragment>
     );
 }
+
+MostSearchedProjects.propTypes = {
+    hasBackground: PropTypes.bool
+};
 
 export default MostSearchedProjects;

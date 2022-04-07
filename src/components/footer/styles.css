@@ -157,3 +157,46 @@
 .copyright-area .copyright-link ul li a {
     color: #aaaaaa;
 }
+/* Accordion added */
+.footer-collapsible .container-desktop {
+    display: block;
+}
+.footer-collapsible .container-mobile {
+    display: none;
+}
+.footer-collapsible .Collapsible__trigger {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    margin: 0 0 10px;
+    cursor: pointer;
+    pointer-events: none;
+    width: 100%;
+}
+@media (max-width: 767px) {
+    .footer-collapsible .Collapsible__trigger {
+        pointer-events: initial;
+        color: #fff;
+        padding: 5px 10px;
+        margin: 0!important;
+        border-radius: 0.55em;
+        border: 1px solid #333;
+        transition: background 0.3s easeIn;
+        position: relative;
+    }
+    .footer-collapsible .Collapsible__trigger::after {
+        content: "\e62a";
+        font-family: 'themify';
+        font-size: 12px;
+        color: #fff;
+        float: right;
+    }
+    .footer-collapsible .container-desktop {
+        display: none;
+    }
+    .footer-collapsible .container-mobile {
+        display: block;
+    }
+}

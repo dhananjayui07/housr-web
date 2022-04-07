@@ -44,8 +44,8 @@
     margin-right: 40px;
 }
 .newsletter-wrapper .newsletter-content-box-one .icon img {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
 }
 
 @media (max-width: 767px) {
@@ -104,7 +104,7 @@
 
 .newsletter-wrapper-one {
     position: relative;
-    padding: 55px 50px 32px;
+    padding: 35px 30px 24px;
     margin-top: -60px;
     border-radius: 20px;
     z-index: 2;

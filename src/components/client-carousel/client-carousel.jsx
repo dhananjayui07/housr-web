@@ -59,37 +59,37 @@ function ClientCarousel() {
                             <Slider {...settings}>
                                 <div className="client-item">
                                     <div className="client-img">
-                                        <NavLink to="/"><img src={Client1} width="70" alt="Client Image" /></NavLink>
+                                        <NavLink to="/"><img src={Client1} width="70" alt="Client" /></NavLink>
                                     </div>
                                 </div>
                                 <div className="client-item">
                                     <div className="client-img">
-                                        <NavLink to="/"><img src={Client2} width="130" alt="Client Image" /></NavLink>
+                                        <NavLink to="/"><img src={Client2} width="130" alt="Client" /></NavLink>
                                     </div>
                                 </div>
                                 <div className="client-item">
                                     <div className="client-img">
-                                        <NavLink to="/"><img src={Client3} width="180" alt="Client Image" /></NavLink>
+                                        <NavLink to="/"><img src={Client3} width="180" alt="Client" /></NavLink>
                                     </div>
                                 </div>
                                 <div className="client-item">
                                     <div className="client-img">
-                                        <NavLink to="/"><img src={Client4} width="130" alt="Client Image" /></NavLink>
+                                        <NavLink to="/"><img src={Client4} width="130" alt="Client" /></NavLink>
                                     </div>
                                 </div>
                                 <div className="client-item">
                                     <div className="client-img">
-                                        <NavLink to="/"><img src={Client5} width="130" alt="Client Image" /></NavLink>
+                                        <NavLink to="/"><img src={Client5} width="130" alt="Client" /></NavLink>
                                     </div>
                                 </div>
                                 <div className="client-item">
                                     <div className="client-img">
-                                        <NavLink to="/"><img src={Client6} width="130" alt="Client Image" /></NavLink>
+                                        <NavLink to="/"><img src={Client6} width="130" alt="Client" /></NavLink>
                                     </div>
                                 </div>
                                 <div className="client-item">
                                     <div className="client-img">
-                                        <NavLink to="/"><img src={Client7} width="130" alt="Client Image" /></NavLink>
+                                        <NavLink to="/"><img src={Client7} width="130" alt="Client" /></NavLink>
                                     </div>
                                 </div>
                             </Slider>

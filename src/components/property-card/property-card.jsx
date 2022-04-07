@@ -11,7 +11,7 @@ function PropertyCard({ imgPath, categorytext, propertyName, cityText  }) {
                     <span className="featured-btn">{categorytext}</span>
                 </div>
                 <div className="listing-content">
-                    <h3 className="title font-weight-normal"><NavLink to="/">{propertyName}</NavLink></h3>
+                    <h3 className="title font-weight-normal"><a href="https://www.google.com/" target="_blank">{propertyName}</a></h3>
                     <p>
                         <span><i className="ti-location-pin" /> {cityText}</span> 
                         <span className="float-right"><NavLink to="/" className="btn-link"><i className="ti-share" /> Share</NavLink></span>
@@ -24,7 +24,7 @@ function PropertyCard({ imgPath, categorytext, propertyName, cityText  }) {
                     <div className="listing-meta">
                         <ul>
                             <li><span><NavLink to="/" className="btn-link"><i className="ti-direction-alt" /> Direction</NavLink> </span></li>
-                            <li><span className="btn btn-danger"><i className="ti-hand-point-right text-white" /><NavLink to="/">Pre Book Now</NavLink></span></li>
+                            <li><span className="btn btn-danger"><i className="ti-hand-point-right text-white" /><NavLink to="/">Book Now</NavLink></span></li>
                         </ul>
                     </div>
                 </div>

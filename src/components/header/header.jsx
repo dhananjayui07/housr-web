@@ -1,26 +1,59 @@
-import React, { Component } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from "./styles.css";
 import { NavLink } from "react-router-dom";
 import LogoImage from "./images/logo-housr.png";
-
-import Select from 'react-select'
-
-const cityoptions = [
-  { value: 'haryana', label: 'Haryana' },
-  { value: 'hyderabad', label: 'Hyderabad' },
-  { value: 'pune', label: 'Pune' }
-]
-const categoryoptions = [
-  { value: 'coliving', label: 'Housr Co-living' },
-  { value: 'homes', label: 'Housr Homes' },
-  { value: 'stayabode', label: 'StayAbode by Housr' }
-]
+import HeaderSearch from './header-search';
 
 function Header() {
+
+
+  // sticky Nav
+  const [navBar, setNavBar] = useState(false);
+
+  const navbarSticky = () => {
+    if (window.scrollY >= 120) {
+      setNavBar(true);
+    } else {
+      setNavBar(false);
+    }
+  }
+  window.addEventListener('scroll', navbarSticky);
+
+  // menu toggle
+  const [toggleNav, setToggleNav] = useState(false);
+  const ToggleNav = () => {
+    setToggleNav(!toggleNav);
+  } 
+  
+  // mobile menu dropdown
+  const [toggleCategoryNav, setToggleCategoryNav] = useState(false);
+  const ToggleCategoryNav = () => {
+    setToggleCategoryNav(!toggleCategoryNav);
+  }
+  
+  const [toggleLocationNav, setToggleLocationNav] = useState(false);
+  const ToggleLocationNav = () => {
+    setToggleLocationNav(!toggleLocationNav);
+  }
+
+
+  // add breakpoint class
+  const headerNav = useRef(null);
+  var screenWidth = window.innerWidth;
+
+  useEffect(() => {
+      if (screenWidth <= 600) {
+        headerNav.current.classList.add("breakpoint-on");
+      } else {
+        headerNav.current.classList.remove("breakpoint-on");
+      }
+      return () => {};
+  });
+
   return (
     <React.Fragment>
       <header className="header-area header-area-two">
-          <div className="header-navigation sticky">
+          <div className={navBar ? 'header-navigation sticky' : 'header-navigation'} ref={headerNav}>
               <div className="container-fluid">
                   <div className="primary-menu">
                       <div className="row align-items-center">
@@ -32,9 +65,9 @@ function Header() {
                               </div>
                           </div>
                           <div className="col-lg-7 col-2">
-                              <div className="nav-menu float-right">
-                                  <div className="navbar-close"><i className="ti-close" /></div>
-                                  <nav className="main-menu">
+                              <div className={toggleNav ? "nav-menu float-right menu-on" : "nav-menu float-right"}>
+                                  <div className="navbar-close" onClick={ToggleNav}><i className="ti-close" /></div>
+                                  <nav className={navBar ? 'main-menu hide' : 'main-menu'}>
                                       <ul>
                                           <li className="menu-item">
                                             <NavLink className="navbar-brand" to="/">
@@ -45,31 +78,33 @@ function Header() {
                                           <li className="menu-item">
                                             <NavLink className="nav-link" to="/about">About Us</NavLink>
                                           </li>
-                                          <li className="menu-item has-children"><NavLink to="/about">Category</NavLink>
-                                              <ul className="sub-menu">
-                                                  <li className="menu-item"><NavLink to="/">Housr Co-living</NavLink></li>
-                                                  <li className="menu-item"><NavLink to="/">Housr Homes</NavLink></li>
-                                                  <li className="menu-item"><NavLink to="/">StayAbode by Housr</NavLink></li>
+                                          <li className="menu-item has-children"><a href={void(0)} >Category</a>
+                                              <ul className={toggleCategoryNav ? "sub-menu open" : "sub-menu"}>
+                                                  <li className="menu-item"><NavLink to="/housr-coliving">Housr Co-living</NavLink></li>
+                                                  <li className="menu-item"><NavLink to="/housr-homes">Housr Homes</NavLink></li>
+                                                  <li className="menu-item"><NavLink to="/stay-abode">StayAbode by Housr</NavLink></li>
                                               </ul>
-                                          <span className="dd-trigger"><i className="ti-arrow-down"></i></span></li>
-                                          <li className="menu-item has-children"><a href="#">Locations</a>
-                                              <ul className="sub-menu">
+                                            <span className="dd-trigger" onClick={ToggleCategoryNav}><i className="ti-arrow-down"></i></span>
+                                          </li>
+                                          <li className="menu-item has-children"><a href={void(0)} >Locations</a>
+                                              <ul className={toggleLocationNav ? "sub-menu open" : "sub-menu"}>
                                                   <li className="menu-item"><NavLink to="/">Gurgaon</NavLink></li>
                                                   <li className="menu-item"><NavLink to="/">Hyderabad</NavLink></li>
                                                   <li className="menu-item"><NavLink to="/">Pune</NavLink></li>
                                                   <li className="menu-item"><NavLink to="/">Banglore</NavLink></li>
                                                   <li className="menu-item"><NavLink to="/">Coming Soon</NavLink></li>
                                               </ul>
-                                          <span className="dd-trigger"><i className="ti-arrow-down"></i></span></li>
-                                          <li className="menu-item">
-                                            <NavLink className="nav-link" to="/about">Housr Way</NavLink>
+                                            <span className="dd-trigger" onClick={ToggleLocationNav}><i className="ti-arrow-down"></i></span>
                                           </li>
                                           <li className="menu-item">
-                                            <NavLink className="nav-link" to="/about">Offers</NavLink>
+                                            <NavLink className="nav-link" to="/housr-way">Housr Way</NavLink>
                                           </li>
-                                          {/* <li className="menu-item">
-                                            <NavLink className="nav-link" to="/">Blog</NavLink>
-                                          </li> */}
+                                          <li className="menu-item">
+                                            <NavLink className="nav-link" to="/offers">Offers</NavLink>
+                                          </li>
+                                          <li className="menu-item">
+                                            <NavLink className="nav-link" to="/blog">Blog</NavLink>
+                                          </li>
                                       </ul>
                                   </nav>
                               </div>
@@ -79,7 +114,7 @@ function Header() {
                                   <ul className="d-flex align-items-center">
                                       <li className="hero-nav-btn"><span className="main-btn">Request Call</span></li>
                                       <li className="nav-toggle-btn">
-                                          <div className="navbar-toggler">
+                                          <div className={toggleNav ? "navbar-toggler active" : "navbar-toggler"} onClick={ToggleNav}>
                                               <span />
                                               <span />
                                               <span />
@@ -93,34 +128,8 @@ function Header() {
               </div>
           </div>
       </header>
-
-      <div className="hero-slider-wrapper">
-        <div className="col-lg-6 col-md-8 col-sm-8 align-self-center">
-            <div className="hero-content">
-                <div className="hero-search-wrapper wow fadeInUp" wow-data-delay="70ms">
-                    <form>
-                        <div className="row">
-                            <div className="col-lg-5 col-md-4 col-sm-12 cityWrap">
-                                <div className="form_group">
-                                    <Select options={cityoptions} />
-                                </div>
-                            </div>
-                            <div className="col-lg-5 col-md-4 col-sm-12 categoryWrap">
-                                <div className="form_group">
-                                    <Select options={categoryoptions} />
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-4 col-sm-12 searchWrap">
-                                <div className="form_group">
-                                    <button className="main-btn ti-search"><span className="m-none">Search</span></button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+      {!toggleNav ? <HeaderSearch /> : ''}
+      
 
     </React.Fragment>
   );

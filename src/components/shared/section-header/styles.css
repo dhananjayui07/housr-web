@@ -1,0 +1,22 @@
+.section-heading-text {
+    font-size: 48px;
+    line-height: 55px;
+    color: #e73943;
+    font-weight: 700;
+    margin: 0 0 0.25rem;
+    font-family: "Work Sans", sans-serif;
+}
+.section-heading-sub-text {
+    font-weight: 400;
+    margin: 0 0 10px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #0d0d0d;
+    font-family: "Work Sans", sans-serif;
+}
+@media (max-width: 767px) {
+    .section-heading-sub-text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
