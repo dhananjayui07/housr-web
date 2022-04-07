@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from "./styles.css";
 import { NavLink } from "react-router-dom";
 import LogoImage from "./images/logo-housr.png";
@@ -23,13 +23,37 @@ function Header() {
   const [toggleNav, setToggleNav] = useState(false);
   const ToggleNav = () => {
     setToggleNav(!toggleNav);
+  } 
+  
+  // mobile menu dropdown
+  const [toggleCategoryNav, setToggleCategoryNav] = useState(false);
+  const ToggleCategoryNav = () => {
+    setToggleCategoryNav(!toggleCategoryNav);
   }
   
+  const [toggleLocationNav, setToggleLocationNav] = useState(false);
+  const ToggleLocationNav = () => {
+    setToggleLocationNav(!toggleLocationNav);
+  }
+
+
+  // add breakpoint class
+  const headerNav = useRef(null);
+  var screenWidth = window.innerWidth;
+
+  useEffect(() => {
+      if (screenWidth <= 600) {
+        headerNav.current.classList.add("breakpoint-on");
+      } else {
+        headerNav.current.classList.remove("breakpoint-on");
+      }
+      return () => {};
+  });
 
   return (
     <React.Fragment>
       <header className="header-area header-area-two">
-          <div className={navBar ? 'header-navigation sticky' : 'header-navigation'}>
+          <div className={navBar ? 'header-navigation sticky' : 'header-navigation'} ref={headerNav}>
               <div className="container-fluid">
                   <div className="primary-menu">
                       <div className="row align-items-center">
@@ -55,21 +79,23 @@ function Header() {
                                             <NavLink className="nav-link" to="/about">About Us</NavLink>
                                           </li>
                                           <li className="menu-item has-children"><a href={void(0)} >Category</a>
-                                              <ul className="sub-menu">
+                                              <ul className={toggleCategoryNav ? "sub-menu open" : "sub-menu"}>
                                                   <li className="menu-item"><NavLink to="/housr-coliving">Housr Co-living</NavLink></li>
                                                   <li className="menu-item"><NavLink to="/housr-homes">Housr Homes</NavLink></li>
                                                   <li className="menu-item"><NavLink to="/stay-abode">StayAbode by Housr</NavLink></li>
                                               </ul>
-                                          <span className="dd-trigger"><i className="ti-arrow-down"></i></span></li>
+                                            <span className="dd-trigger" onClick={ToggleCategoryNav}><i className="ti-arrow-down"></i></span>
+                                          </li>
                                           <li className="menu-item has-children"><a href={void(0)} >Locations</a>
-                                              <ul className="sub-menu">
+                                              <ul className={toggleLocationNav ? "sub-menu open" : "sub-menu"}>
                                                   <li className="menu-item"><NavLink to="/">Gurgaon</NavLink></li>
                                                   <li className="menu-item"><NavLink to="/">Hyderabad</NavLink></li>
                                                   <li className="menu-item"><NavLink to="/">Pune</NavLink></li>
                                                   <li className="menu-item"><NavLink to="/">Banglore</NavLink></li>
                                                   <li className="menu-item"><NavLink to="/">Coming Soon</NavLink></li>
                                               </ul>
-                                          <span className="dd-trigger"><i className="ti-arrow-down"></i></span></li>
+                                            <span className="dd-trigger" onClick={ToggleLocationNav}><i className="ti-arrow-down"></i></span>
+                                          </li>
                                           <li className="menu-item">
                                             <NavLink className="nav-link" to="/housr-way">Housr Way</NavLink>
                                           </li>
@@ -102,7 +128,8 @@ function Header() {
               </div>
           </div>
       </header>
-      <HeaderSearch />
+      {!toggleNav ? <HeaderSearch /> : ''}
+      
 
     </React.Fragment>
   );

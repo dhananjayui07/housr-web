@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from "./styles.css";
 
 import Select from 'react-select'
@@ -26,9 +26,25 @@ function HeaderSearch() {
     }
     window.addEventListener('scroll', searchbarSticky);
 
+    // add breakpoint class
+    const heroSearch = useRef(null);
+    var screenWidth = window.innerWidth;
+
+    useEffect(() => {
+        if (screenWidth <= 600) {
+            heroSearch.current.classList.add("breakpoint-on");
+        } else {
+            heroSearch.current.classList.remove("breakpoint-on");
+        }
+        return () => {};
+    });
+
+    
+    
+
   return (
     <React.Fragment>
-        <div className={searchBar ? 'hero-slider-wrapper sticky' : 'hero-slider-wrapper'}>
+        <div className={searchBar ? 'hero-slider-wrapper sticky' : 'hero-slider-wrapper'} ref={heroSearch}>
             <div className="hero-content">
                 <div className="hero-search-wrapper wow fadeInUp" wow-data-delay="70ms">
                 <form>
