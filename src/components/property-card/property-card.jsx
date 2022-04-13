@@ -11,7 +11,7 @@ function PropertyCard({ imgPath, categorytext, propertyName, cityText  }) {
                     <span className="featured-btn">{categorytext}</span>
                 </div>
                 <div className="listing-content">
-                    <h3 className="title font-weight-normal"><a href="https://www.google.com/" target="_blank">{propertyName}</a></h3>
+                    <h3 className="title font-weight-normal"><a href="https://www.google.com/" target="_blank" rel="noreferrer">{propertyName}</a></h3>
                     <p>
                         <span><i className="ti-location-pin" /> {cityText}</span> 
                         <span className="float-right"><NavLink to="/" className="btn-link"><i className="ti-share" /> Share</NavLink></span>

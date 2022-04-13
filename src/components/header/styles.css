@@ -278,13 +278,15 @@
     opacity: 1;
     display: none;
     -webkit-transition: none;
-    transition: none;
+    transition: all 0.3s;
 }
 .header-navigation.breakpoint-on .nav-menu .main-menu ul li .sub-menu {
     height: 0;
 }
+.header-navigation .nav-menu.menu-on .main-menu ul li .sub-menu.open,
 .header-navigation.breakpoint-on .nav-menu .main-menu ul li .sub-menu.open {
     display: block;
+    height: auto;
 }
 .header-navigation .nav-menu.menu-on .main-menu ul li .sub-menu li a,
 .header-navigation.breakpoint-on .nav-menu .main-menu ul li .sub-menu li a {

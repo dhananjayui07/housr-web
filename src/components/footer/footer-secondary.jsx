@@ -28,8 +28,8 @@ function FooterSecondaryLandingPage() {
                                     <ul className="categories-link">
                                         <li><NavLink to="/">Locations</NavLink></li>
                                         <li><NavLink to="/">Housr in News</NavLink></li>
-                                        <li><NavLink to="/">Contact Us</NavLink></li>
-                                        <li><NavLink to="/">Partner with us</NavLink></li>
+                                        <li><NavLink to="/contact">Contact Us</NavLink></li>
+                                        <li><NavLink to="/partners">Partner with us</NavLink></li>
                                     </ul>
                                 </div>
                             </div>
