@@ -6,7 +6,7 @@ function SectionHeader({ text, subtext }) {
     return(
         <React.Fragment>
             <h2 className={"section-heading-text"}>{text}</h2>
-            <h3 className={"section-heading-sub-text"}>{subtext}</h3>
+            {subtext && (<h3 className={"section-heading-sub-text"}>{subtext}</h3>)}
         </React.Fragment>
     );
 }

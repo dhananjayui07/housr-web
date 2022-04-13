@@ -128,7 +128,7 @@ function Header() {
               </div>
           </div>
       </header>
-      {!toggleNav ? <HeaderSearch /> : ''}
+      {/* {!toggleNav ? <HeaderSearch /> : ''} */}
       
 
     </React.Fragment>
