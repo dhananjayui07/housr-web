@@ -1,7 +1,7 @@
 import React from "react";
 import ClientCarousel from "../client-carousel/client-carousel";
 import Newsletter from "../newsletter/newsletter";
-import styles from "./styles.css";
+import "./styles.css";
 
 import GoogleMapReact from 'google-map-react';
 
@@ -111,7 +111,7 @@ function Contact() {
             </div>
         </div>
     </section>
-    <section class="amenities-bg pt-50 pb-50" />
+    <section className="amenities-bg pt-50 pb-50" />
     <Newsletter />
     <ClientCarousel />
   </React.Fragment>

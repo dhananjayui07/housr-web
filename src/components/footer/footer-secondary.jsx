@@ -1,9 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import styles from "./styles.css";
+import "./styles.css";
 import Collapsible from 'react-collapsible';
+import scrollToTop from "../../helpers/scroll-to-top";
 
 function FooterSecondaryLandingPage() {
+
+    const onAnchorClick = (e) => {
+        scrollToTop();
+    };
+
     return(
         <React.Fragment>
             <div className="footer-wrapper-one background-housr">
@@ -16,7 +22,7 @@ function FooterSecondaryLandingPage() {
                             <div className="col-lg-4 col-md-6 col-sm-12">
                                 <div className="widget categories-widget mb-40 wow fadeInUp" data-wow-delay="30ms">
                                     <ul className="categories-link">
-                                        <li><NavLink to="/">About Us</NavLink></li>
+                                        <li><NavLink to="/about" onClick={onAnchorClick}>About Us</NavLink></li>
                                         <li><NavLink to="/">Privacy Policy</NavLink></li>
                                         <li><NavLink to="/">Cancellation Policy </NavLink></li>
                                         <li><NavLink to="/">Payment Terms &amp; Conditions</NavLink></li>
@@ -28,8 +34,8 @@ function FooterSecondaryLandingPage() {
                                     <ul className="categories-link">
                                         <li><NavLink to="/">Locations</NavLink></li>
                                         <li><NavLink to="/">Housr in News</NavLink></li>
-                                        <li><NavLink to="/contact">Contact Us</NavLink></li>
-                                        <li><NavLink to="/partners">Partner with us</NavLink></li>
+                                        <li><NavLink to="/contact" onClick={onAnchorClick}>Contact Us</NavLink></li>
+                                        <li><NavLink to="/partners" onClick={onAnchorClick}>Partner with us</NavLink></li>
                                     </ul>
                                 </div>
                             </div>

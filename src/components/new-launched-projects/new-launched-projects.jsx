@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Slider from "react-slick";
 import PropertyCard from "../property-card/property-card";
-import styles from "./styles.css";
+import "./styles.css";
 
 import PropertyOne from "./images/listing-grid-1.jpeg";
 import PropertyTwo from "./images/New1.jpeg";

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles.css";
+import "./styles.css";
 
 import Deepak from "./images/deepak.jpeg";
 import Kalpesh from "./images/kalpesh.jpeg";
@@ -20,7 +20,7 @@ function FoundingTeam() {
                     <div className="row">
                         <div className="col-lg-6 col-md-6">
                             <div className="features-img wow fadeInLeft">
-                                <img className="team-image" src={Deepak} width="100%" alt="Features Image" />
+                                <img className="team-image" src={Deepak} width="100%" alt="Deepak" />
                             </div>
                             <div className="features-content-box features-content-box-one">
                                 <h3 className="pt-20 text-center">Deepak Anand</h3>
@@ -30,7 +30,7 @@ function FoundingTeam() {
                         </div>
                         <div className="col-lg-6 col-md-6">
                             <div className="features-img wow fadeInLeft">
-                                <img className="team-image" src={Kalpesh} width="100%" alt="Features Image" />
+                                <img className="team-image" src={Kalpesh} width="100%" alt="Kalpesh" />
                             </div>
                             <div className="features-content-box features-content-box-one">
                                 <h3 className="pt-20 text-center">Kalpesh Mehta</h3>

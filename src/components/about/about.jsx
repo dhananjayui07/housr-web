@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles.css";
+import "./styles.css";
 import BannerInnereLanding from "../banner-inner-landing/banner-inner-landing";
 import BannerAbout from "./images/about-page.jpeg";
 import Newsletter from "../newsletter/newsletter";
@@ -65,28 +65,28 @@ function About() {
           <div className="row vision-wrap">
             <div className="col-lg-3 col-md-6 col-sm-12 text-center pb-40">
               <div className="content"> 
-                <img src={IconVision} width="64px" className="mb-20" />
+                <img src={IconVision} width="64px" className="mb-20" alt="" />
                 <h4 className="rcol">OUR VISION</h4>
                 <p>To chnage the Way Millennials Live.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-12 text-center pb-40">
               <div className="content">
-                <img src={IconMission} width="64px" className="mb-20" />
+                <img src={IconMission} width="64px" className="mb-20" alt="" />
                 <h4 className="rcol">OUR MISSION</h4>
                 <p>To Bring Millennials together by providing them a truly exceptional living experience.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-12 text-center pb-40">
               <div className="content">
-                <img src={IconValues} width="64px" className="mb-20" />
+                <img src={IconValues} width="64px" className="mb-20" alt="" />
                 <h4 className="rcol">OUR VALUES</h4>
                 <p>We Love People. We believe in people  over process and culture over profits.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-12 text-center pb-40">
               <div className="content">
-                <img src={IconGoal} width="64px" className="mb-20" />
+                <img src={IconGoal} width="64px" className="mb-20" alt="" />
                 <h4 className="recent-post-list rcol">OUR GOAL</h4>
                 <p>We want to provide people with places they would love to live at and to do this, we manage our spaces end-to-end, making customer service our top priority.</p>
               </div>

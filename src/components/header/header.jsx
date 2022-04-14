@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
-import styles from "./styles.css";
+import "./styles.css";
 import { NavLink } from "react-router-dom";
 import LogoImage from "./images/logo-housr.png";
 import HeaderSearch from './header-search';
+import scrollToTop from "../../helpers/scroll-to-top";
 
 function Header() {
 
@@ -50,6 +51,10 @@ function Header() {
       return () => {};
   });
 
+  const onAnchorClick = (e) => {
+      scrollToTop();
+  };
+
   return (
     <React.Fragment>
       <header className="header-area header-area-two">
@@ -59,7 +64,7 @@ function Header() {
                       <div className="row align-items-center">
                           <div className="col-lg-2 col-5">
                               <div className="site-branding">
-                                <NavLink className="brand-logo" to="/">
+                                <NavLink className="brand-logo" to="/" onClick={onAnchorClick}>
                                   <img src={LogoImage} width="120" alt="Brand Logo" />
                                 </NavLink>
                               </div>
@@ -70,40 +75,40 @@ function Header() {
                                   <nav className={navBar ? 'main-menu hide' : 'main-menu'}>
                                       <ul>
                                           <li className="menu-item">
-                                            <NavLink className="navbar-brand" to="/">
+                                            <NavLink className="navbar-brand" to="/" onClick={onAnchorClick}>
                                               Home
                                               <span className="sr-only">(current)</span>
                                             </NavLink>
                                           </li>
                                           <li className="menu-item">
-                                            <NavLink className="nav-link" to="/about">About Us</NavLink>
+                                            <NavLink className="nav-link" to="/about" onClick={onAnchorClick}>About Us</NavLink>
                                           </li>
-                                          <li className="menu-item has-children"><a href={void(0)} >Category</a>
+                                          <li className="menu-item has-children"><a href="void(0)" >Category</a>
                                               <ul className={toggleCategoryNav ? "sub-menu open" : "sub-menu"}>
-                                                  <li className="menu-item"><NavLink to="/housr-coliving">Housr Co-living</NavLink></li>
-                                                  <li className="menu-item"><NavLink to="/housr-homes">Housr Homes</NavLink></li>
-                                                  <li className="menu-item"><NavLink to="/stay-abode">StayAbode by Housr</NavLink></li>
+                                                  <li className="menu-item"><NavLink to="/housr-coliving" onClick={onAnchorClick}>Housr Co-living</NavLink></li>
+                                                  <li className="menu-item"><NavLink to="/housr-homes" onClick={onAnchorClick}>Housr Homes</NavLink></li>
+                                                  <li className="menu-item"><NavLink to="/stay-abode" onClick={onAnchorClick}>StayAbode by Housr</NavLink></li>
                                               </ul>
                                             <span className="dd-trigger" onClick={ToggleCategoryNav}><i className="ti-arrow-down"></i></span>
                                           </li>
-                                          <li className="menu-item has-children"><a href={void(0)} >Locations</a>
+                                          <li className="menu-item has-children"><a href="void(0)" >Locations</a>
                                               <ul className={toggleLocationNav ? "sub-menu open" : "sub-menu"}>
-                                                  <li className="menu-item"><NavLink to="/">Gurgaon</NavLink></li>
-                                                  <li className="menu-item"><NavLink to="/">Hyderabad</NavLink></li>
-                                                  <li className="menu-item"><NavLink to="/">Pune</NavLink></li>
-                                                  <li className="menu-item"><NavLink to="/">Banglore</NavLink></li>
-                                                  <li className="menu-item"><NavLink to="/">Coming Soon</NavLink></li>
+                                                  <li className="menu-item"><NavLink to="/" onClick={onAnchorClick}>Gurgaon</NavLink></li>
+                                                  <li className="menu-item"><NavLink to="/" onClick={onAnchorClick}>Hyderabad</NavLink></li>
+                                                  <li className="menu-item"><NavLink to="/" onClick={onAnchorClick}>Pune</NavLink></li>
+                                                  <li className="menu-item"><NavLink to="/" onClick={onAnchorClick}>Banglore</NavLink></li>
+                                                  <li className="menu-item"><NavLink to="/" onClick={onAnchorClick}>Coming Soon</NavLink></li>
                                               </ul>
                                             <span className="dd-trigger" onClick={ToggleLocationNav}><i className="ti-arrow-down"></i></span>
                                           </li>
                                           <li className="menu-item">
-                                            <NavLink className="nav-link" to="/housr-way">Housr Way</NavLink>
+                                            <NavLink className="nav-link" to="/housr-way" onClick={onAnchorClick}>Housr Way</NavLink>
                                           </li>
                                           <li className="menu-item">
-                                            <NavLink className="nav-link" to="/offers">Offers</NavLink>
+                                            <NavLink className="nav-link" to="/offers" onClick={onAnchorClick}>Offers</NavLink>
                                           </li>
                                           <li className="menu-item">
-                                            <NavLink className="nav-link" to="/blog">Blog</NavLink>
+                                            <NavLink className="nav-link" to="/blog" onClick={onAnchorClick}>Blog</NavLink>
                                           </li>
                                       </ul>
                                   </nav>
@@ -128,7 +133,7 @@ function Header() {
               </div>
           </div>
       </header>
-      {/* {!toggleNav ? <HeaderSearch /> : ''} */}
+      {!toggleNav ? <HeaderSearch /> : ''}
       
 
     </React.Fragment>

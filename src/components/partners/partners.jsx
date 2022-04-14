@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles.css";
+import "./styles.css";
 import Select from 'react-select'
 import Newsletter from "../newsletter/newsletter";
 import ClientCarousel from "../client-carousel/client-carousel";

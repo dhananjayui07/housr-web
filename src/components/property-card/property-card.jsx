@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles.css";
+import "./styles.css";
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 
