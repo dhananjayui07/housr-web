@@ -2,12 +2,13 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./styles.css";
 import Collapsible from 'react-collapsible';
-import scrollToTop from "../../helpers/scroll-to-top";
 
 function FooterSecondaryLandingPage() {
 
     const onAnchorClick = (e) => {
-        scrollToTop();
+        if (window !== undefined) {
+            window.setTimeout(() => window.scrollTo(0, 0));
+        }
     };
 
     return(

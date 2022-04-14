@@ -3,7 +3,6 @@ import "./styles.css";
 import { NavLink } from "react-router-dom";
 import LogoImage from "./images/logo-housr.png";
 import HeaderSearch from './header-search';
-import scrollToTop from "../../helpers/scroll-to-top";
 
 function Header() {
 
@@ -52,7 +51,9 @@ function Header() {
   });
 
   const onAnchorClick = (e) => {
-      scrollToTop();
+    if (window !== undefined) {
+      window.setTimeout(() => window.scrollTo(0, 0));
+    }
   };
 
   return (
