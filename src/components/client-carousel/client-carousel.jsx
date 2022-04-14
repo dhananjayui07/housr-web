@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import styles from "./styles.css";
+import "./styles.css";
 
 // clients icons
 import Client1 from "./images/01.png";

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles.css";
+import "./styles.css";
 
 import ClientCarousel from "../client-carousel/client-carousel";
 import MostSearchedProjects from "../most-searched-projects/most-searched-projects";

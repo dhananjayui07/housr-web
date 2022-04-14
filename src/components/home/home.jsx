@@ -1,5 +1,5 @@
 import React from "react";
-// import styles from "./styles.css";
+// import "./styles.css";
 import AmenitiesHome from "../amenities-home/amenities-home";
 import ClientCarousel from "../client-carousel/client-carousel";
 import HousrWay from "../housr-way/housr-way";

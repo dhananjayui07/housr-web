@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles.css";
+import "./styles.css";
 
 // images
 import Nitin from "./images/nitin.png";

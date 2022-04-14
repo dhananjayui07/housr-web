@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles.css";
+import "./styles.css";
 import StayAbode from "./images/stay-abode.png";
 import Slider from "react-slick";
 import SlideOne from "./images/slide01.jpeg";

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import FooterSecondaryLandingPage from "./footer-secondary";
-import styles from "./styles.css";
+import "./styles.css";
 
 function Footer() {
   return (

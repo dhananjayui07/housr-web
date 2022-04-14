@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles.css";
+import "./styles.css";
 import IntroVideo from "../../img/brand-vedio-for-website.mp4";
 
 function HousrWay() {
