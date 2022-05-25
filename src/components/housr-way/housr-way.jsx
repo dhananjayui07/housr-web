@@ -11,7 +11,7 @@ function HousrWay() {
                         <div className="row justify-content-center">
                             <div className="col-lg-8">
                                 <div className="section-title text-center mb-55 wow fadeInUp">
-                                    <h2 className="housr-way-title">Housr Way</h2>
+                                    <h2 className="housr-way-title text-white">Housr Way</h2>
                                     <h3 className="sub-title mb-10 font-weight-normal text-white">Make it happen, with Housr</h3>
                                 </div>
                             </div>

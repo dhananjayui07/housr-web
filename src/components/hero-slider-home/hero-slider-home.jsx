@@ -24,36 +24,36 @@ function HeroSliderHome() {
                 <div className="slide-item">
                     <img className="slide-banner" src={SlideOne} alt="HOUSR CO-LIVING" />
                     <div className="slide-content">
-                        <h2 className="rcol">HOUSR CO-LIVING</h2>
+                        <h2 className="pcol">HOUSR CO-LIVING</h2>
                         <p>
                             Fully Furnished
                             and Managed Studios <br />
                             for single working professionals
                         </p>
-                        <span className="rcol"><em>#LetsLiveBetter</em></span>
+                        <span className="pcol"><em>#LetsLiveBetter</em></span>
                     </div>
                 </div>
                 <div className="slide-item">
                     <img className="slide-banner" src={SlideTwo} alt="HOUSR HOMES" />
                     <div className="slide-content">
-                        <h2 className="rcol">HOUSR HOMES</h2>
+                        <h2 className="pcol">HOUSR HOMES</h2>
                         <p>
                             Fully Furnished
                             and Managed Residences <br />
                             for individuals & small families
                         </p>
-                        <span className="rcol"><em>#HassleFreeLiving</em></span>
+                        <span className="pcol"><em>#HassleFreeLiving</em></span>
                     </div>
                 </div>
                 <div className="slide-item">
                     <img className="slide-banner" src={SlideThree} alt="Stay-Abode" />
                     <div className="slide-content">
-                        <h2 className="rcol"><img src={StayAbode} alt="Stay-Abode" /></h2>
+                        <h2 className="pcol"><img src={StayAbode} alt="Stay-Abode" /></h2>
                         <p>
                             Healthy, Hygienic and Happy Community <br />
                             Living in Bangalore
                         </p>
-                        <span className="rcol"><em>#TechEnabledLiving</em></span>
+                        <span className="pcol"><em>#TechEnabledLiving</em></span>
                     </div>
                 </div>
             </Slider>

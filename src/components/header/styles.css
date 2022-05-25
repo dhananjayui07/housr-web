@@ -53,7 +53,7 @@
 }
 
 .header-navigation .main-menu ul>li.has-children>a.active:after {
-    color: #ff344f;
+    color:#784B95;
 }
 
 .header-navigation .main-menu ul>li.has-children .sub-menu li.has-children:hover>a:after {
@@ -102,7 +102,7 @@
 }
 
 .header-navigation .main-menu ul li>a.active {
-    color: #ff344f;
+    color:#784B95;
 }
 
 .header-navigation .main-menu ul li.nav-btn {
@@ -161,7 +161,7 @@
 }
 
 .header-navigation .main-menu ul li .sub-menu li a:hover {
-    background-color: #ff344f;
+    background-color:#784B95;
     color: #fff;
     border-color: transparent;
 }
@@ -176,16 +176,16 @@
 }
 
 .header-navigation .main-menu ul li .sub-menu li:hover>a {
-    background-color: #ff344f;
+    background-color:#784B95;
     color: #fff;
 }
 
 .header-navigation .main-menu ul li:hover.menu-item-has-children>a:after {
-    color: #ff344f;
+    color:#784B95;
 }
 
 .header-navigation .main-menu ul li:hover>a {
-    color: #ff344f;
+    color:#784B95;
 }
 
 .header-navigation .main-menu ul li:hover>.sub-menu {
@@ -392,7 +392,7 @@
     line-height: 40px;
     display: none;
     cursor: pointer;
-    background: #ff344f;
+    background:#784B95;
 }
 
 .header-navigation .navbar-close i {
@@ -810,7 +810,7 @@ nav.main-menu.hide {
 }
 
 .header-area-three .header-navigation .main-menu ul>li.has-children>a.active:after {
-    color: #ff344f;
+    color:#784B95;
 }
 
 .header-area-three .header-navigation .main-menu ul li a {
@@ -818,11 +818,11 @@ nav.main-menu.hide {
 }
 
 .header-area-three .header-navigation .main-menu ul li:hover.has-children>a:after {
-    color: #ff344f;
+    color:#784B95;
 }
 
 .header-area-three .header-navigation .main-menu ul li:hover>a {
-    color: #ff344f;
+    color:#784B95;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {

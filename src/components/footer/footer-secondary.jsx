@@ -13,7 +13,7 @@ function FooterSecondaryLandingPage() {
 
     return(
         <React.Fragment>
-            <div className="footer-wrapper-one background-housr">
+            <div className="footer-wrapper-one housr-gradient">
                 <div className="footer-widget">
                     <div className="container ">
                         <div className="row pt-30">
