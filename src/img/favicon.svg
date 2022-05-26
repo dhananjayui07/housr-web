@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1.62637in" height="1.62637in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1220 1220"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:none}
+    .fil1 {fill:url(#id0)}
+    .fil2 {fill:url(#id1)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="213.711" y1="64.2857" x2="1004.67" y2="1153.48">
+   <stop offset="0" style="stop-opacity:1; stop-color:#ED3A43"/>
+   <stop offset="0.0392157" style="stop-opacity:1; stop-color:#ED3A43"/>
+   <stop offset="0.25098" style="stop-opacity:1; stop-color:#ED3A43"/>
+   <stop offset="0.419608" style="stop-opacity:1; stop-color:#CF3F62"/>
+   <stop offset="0.568627" style="stop-opacity:1; stop-color:#B14481"/>
+   <stop offset="0.65098" style="stop-opacity:1; stop-color:#99428B"/>
+   <stop offset="0.74902" style="stop-opacity:1; stop-color:#804096"/>
+   <stop offset="0.831373" style="stop-opacity:1; stop-color:#416A99"/>
+   <stop offset="0.890196" style="stop-opacity:1; stop-color:#01939D"/>
+   <stop offset="0.929412" style="stop-opacity:1; stop-color:#38AAA7"/>
+   <stop offset="0.968627" style="stop-opacity:1; stop-color:#6EC1B1"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#6EC1B1"/>
+  </linearGradient>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="651.094" y1="787.341" x2="718.286" y2="839.229">
+   <stop offset="0" style="stop-opacity:1; stop-color:#01939D"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#6EC1B1"/>
+  </linearGradient>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" width="1220" height="1220"/>
+  <g id="_1897965410368">
+   <polygon class="fil1" points="976,1119 976,101 769,101 769,336 451,336 451,101 244,101 244,1119 451,1119 451,518 769,518 769,1119 "/>
+   <path class="fil2" d="M656 816c0,18 15,33 33,33 18,0 32,-15 32,-33l0 0c0,-18 -14,-32 -32,-32l0 0c-18,0 -33,14 -33,32z"/>
+  </g>
+ </g>
+</svg>

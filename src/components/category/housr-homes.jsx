@@ -1,17 +1,17 @@
 import React from "react";
 import "./styles.css";
 
-import ClientCarousel from "../client-carousel/client-carousel";
+import AmenitiesHousrHomes from "../amenities-housr-homes/amenities-housr-homes";
 import MostSearchedProjects from "../most-searched-projects/most-searched-projects";
 import NewLaunchedProjects from "../new-launched-projects/new-launched-projects";
 import Newsletter from "../newsletter/newsletter";
 import UpcomingProjects from "../upcoming-projects/upcoming-projects";
-import AmenitiesColiving from "../amenities-coliving/amenities-coliving";
 import PremiumProjects from "../premium-projects/premium-projects";
 import HelpRequestCtaSection from "../help-request-cta-section/help-request-cta-section";
 import BannerInnereLanding from "../banner-inner-landing/banner-inner-landing";
 import BannerHomes from "./images/homes.jpeg";
 import ThreeStepsBooking from "../three-steps-booking/three-steps-booking";
+import ClientCarousel from "../client-carousel/client-carousel";
 
 
 function HousrHomes() {
@@ -35,7 +35,7 @@ function HousrHomes() {
           </div>
         </div>
       </section>
-      <AmenitiesColiving />
+      <AmenitiesHousrHomes />
       <ThreeStepsBooking />
       <MostSearchedProjects hasBackground />
       <PremiumProjects />

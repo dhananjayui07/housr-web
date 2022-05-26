@@ -44,7 +44,7 @@ function About() {
                   <SectionHeader 
                     text="#LetsLiveBetter with Housr" 
                   />
-                  <h4 className="mb-10 text-white font-weight-normal">When we say hassle free living,then we leave no stone unturned to provide you with a lifestyle that is free and easy</h4>
+                  <h4 className="mb-10 text-white font-weight-normal">When we say hassle-free living, we mean leaving no stone unturned to provide you with a free, easy, and luxurious lifestyle</h4>
                 </div>
               </div>
             </div>

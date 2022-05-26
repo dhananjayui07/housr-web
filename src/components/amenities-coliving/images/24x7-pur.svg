@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="0.772925in" height="0.766453in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 257 255"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="776" font-variant="normal" style="fill-rule:nonzero" font-weight="700">
+	<font-face 
+		font-family="Verdana">
+		<font-face-src>
+			<font-face-name name="Verdana Bold"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="2" horiz-adv-x="710" d="M660.997 0l-570.993 0 0 120.005c43.6676,31.6583 87.3352,65.1642 131.003,100.826 43.8289,35.5001 78.8304,66.1759 105.166,91.9982 39.3272,38.1688 67.3343,71.3374 83.992,99.8431 16.4963,28.3297 24.8398,56.3221 24.8398,84.1679 0,33.154 -10.675,58.8296 -32.0102,76.9975 -21.3206,18.168 -51.9964,27.1566 -91.9982,27.1566 -29.8254,0 -61.3223,-6.15863 -94.3297,-18.4905 -32.9927,-12.5079 -63.6685,-28.3297 -91.9982,-47.5094l-15.6752 0 0 161.679c23.1682,10.0004 57.1726,20.1622 102.336,30.1626 45.002,10.1617 90.1653,15.162 135.504,15.162 91.0011,0 160.506,-19.1651 208.338,-57.4952 47.832,-38.3301 71.836,-92.4967 71.836,-162.5 0,-45.9991 -11.5108,-89.6667 -34.3417,-131.164 -22.9922,-41.3361 -58.1697,-84.1679 -105.327,-128.173 -29.5028,-27.3326 -59.3428,-52.495 -89.3441,-75.5019 -29.8254,-22.9922 -51.1606,-38.99 -63.8298,-48.1693l326.833 0 0 -138.994z"/>
+   <glyph unicode="4" horiz-adv-x="710" d="M670.997 167.001l-98.9926 0 0 -168.996 -179.011 0 0 168.996 -351.995 0 0 137.836 340.338 422.159 190.668 0 0 -426.998 98.9926 0 0 -132.997zm-278.003 132.997l0 263.839 -211.989 -263.839 211.989 0z"/>
+  </font>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2198636494256">
+   <g id="_2416502580016">
+    <g id="_1549737197008">
+     <g>
+      <path fill="none" stroke="#7F3F97" stroke-width="6.89216" d="M75 66c14,-40 48,-63 87,-63 52,0 92,44 92,96 0,40 -25,73 -63,88"/>
+      <path fill="none" stroke="#7F3F97" stroke-width="6.89216" d="M16 95l34 -15 29 48c-4,7 -15,11 -19,15 9,25 29,44 52,58l21 -19 44 25 -15 44c-71,-12 -164,-73 -146,-156l0 0z"/>
+     </g>
+     <g>
+      <g>
+       <g transform="matrix(0.999995 0 0 0.999995 -283.718 -481.561)">
+        <text x="386" y="612" font-weight="bold" font-size="89.3582px" font-family="Verdana" fill="#7F3F97">2</text>
+       </g>
+      </g>
+     </g>
+     <g>
+      <g>
+       <g transform="matrix(0.999995 0 0 0.999995 -225.349 -481.561)">
+        <text x="386" y="612" font-weight="bold" font-size="89.3582px" font-family="Verdana" fill="#7F3F97">4</text>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

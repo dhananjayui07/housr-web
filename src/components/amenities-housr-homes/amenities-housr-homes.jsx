@@ -4,22 +4,20 @@ import "./styles.css";
 
 // icons
 import FullyFurnished from "./images/fully-furnished-pur.svg";
-import Support from "./images/24x7-pur.svg";
 import Mediator from "./images/mediator-pur.svg";
-import Events from "./images/events-pur.svg";
-import Food from "./images/food-pur.svg";
 import Housekeeping from "./images/housekeeping-pur.svg";
 import SafeSecure from "./images/safe-secure-pur.svg";
 import SmartLiving from "./images/smart-living-pur.svg";
 import WashingMachine from "./images/washing-machine-pur.svg";
 import Wifi from "./images/wifi-pur.svg";
+import PetFriendly from "./images/pet-friendly-pur.svg";
 
 import SectionHeader from "../shared/section-header/section-header";
 
-function AmenitiesHome() {
+function AmenitiesHousrHomes() {
     return(
-        <section className="amenities-app">
-            <div className="amenities-wrapper-one pt-100 pb-40">
+        <section className="amenities-app amenities-bg">
+            <div className="amenities-wrapper-one pt-80 pb-60">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
@@ -65,13 +63,6 @@ function AmenitiesHome() {
                                             </div>
                                         </li>
                                         <li className="list-item wow fadeInUp col-lg-4 float-left" data-wow-delay="10ms">
-                                            <div className="icon"><img src={Food} alt="" /></div>
-                                            <div className="content">
-                                                <h5>Fresh Meal Facility</h5>
-                                                <p>We have an in-house cloud kitchen, and a common cafeteria where we offer healthy, hygienic, fresh, gourmet breakfast & dinner meals made by experienced chefs</p>
-                                            </div>
-                                        </li>
-                                        <li className="list-item wow fadeInUp col-lg-4 float-left" data-wow-delay="10ms">
                                             <div className="icon"><img src={SmartLiving} alt="" /></div>
                                             <div className="content">
                                                 <h5>App Enabled Living</h5>
@@ -79,24 +70,17 @@ function AmenitiesHome() {
                                             </div>
                                         </li>
                                         <li className="list-item wow fadeInUp col-lg-4 float-left" data-wow-delay="10ms">
-                                            <div className="icon"><img src={Events} alt="" /></div>
-                                            <div className="content">
-                                                <h5>Engaging Community Events</h5>
-                                                <p>Be a part of the most entertaining and fun community events at Housr. Not only this, we also have an in-house gaming zone and social areas for you to hob-nob</p>
-                                            </div>
-                                        </li>
-                                        <li className="list-item wow fadeInUp col-lg-4 float-left" data-wow-delay="10ms">
-                                            <div className="icon"><img src={Support} alt="" /></div>
-                                            <div className="content">
-                                                <h5>24*7 On-site Support</h5>
-                                                <p>Housr Resident Managers are available 24*7 within the property for any kind of urgent support</p>
-                                            </div>
-                                        </li>
-                                        <li className="list-item wow fadeInUp col-lg-4 float-left" data-wow-delay="10ms">
                                             <div className="icon"><img src={Mediator} alt="" /></div>
                                             <div className="content">
                                                 <h5>No Middlemen</h5>
                                                 <p>No involvement of landlord or brokers, deal directly with a Housr resident manager</p>
+                                            </div>
+                                        </li>
+                                        <li className="list-item wow fadeInUp col-lg-4 float-left" data-wow-delay="10ms">
+                                            <div className="icon"><img src={PetFriendly} alt="" /></div>
+                                            <div className="content">
+                                                <h5>Pet Friendly</h5>
+                                                <p>We love pets! If you do too, Housr welcomes families with pet babies in all its homes</p>
                                             </div>
                                         </li>
                                     </ul>
@@ -109,4 +93,4 @@ function AmenitiesHome() {
         </section>
     );
 }
-export default AmenitiesHome;
+export default AmenitiesHousrHomes;

@@ -6,9 +6,12 @@
     position: relative;
     z-index: 1;
     padding-bottom: 100px;
-    background-image: none;
+    background-image: url(./images/video-section.jpeg) no-repeat;
+    background-position: right bottom;
 }
-
+.intro-wrapper-one.bg-image-none {
+    background-image: none !important;
+}
 .intro-wrapper-one:after {
     position: absolute;
     top: 0;

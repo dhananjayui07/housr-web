@@ -1,10 +1,6 @@
 .background-housr {
     background: url(./images/theme-color-a-bg-grad.jpeg) no-repeat center center;
 }
-.housr-gradient{
-    background: rgb(231,57,67);
-    background: linear-gradient(141deg, rgba(231,57,67,1) 0%, rgba(225,58,71,1) 24%, rgba(120,75,149,1) 44%, rgba(106,78,153,1) 61%, rgba(0,147,153,1) 82%, rgba(109,193,177,1) 100%);
-}
 .footer-widget .widget h4.widget-title {
     margin-bottom: 20px;
 }

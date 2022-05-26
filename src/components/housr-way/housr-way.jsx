@@ -6,7 +6,7 @@ function HousrWay() {
     return(
         <React.Fragment>
             <section className="intro-video">
-                <div className="intro-wrapper-one bg_cover pt-115">
+                <div className="intro-wrapper-one housr-gradient pt-115">
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-lg-8">
