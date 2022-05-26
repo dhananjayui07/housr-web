@@ -4,9 +4,9 @@ import Select from 'react-select'
 import Newsletter from "../newsletter/newsletter";
 import ClientCarousel from "../client-carousel/client-carousel";
 
-import LogTerm from "./images/long-term.svg";
-import Sanitization from "./images/sanitization.svg";
-import Competitive from "./images/competitive.svg";
+import LongTerm from "./images/long-term-pur.png";
+import Sanitization from "./images/sanitization-pur.svg";
+import Competitive from "./images/competitive-pur.svg";
 import SectionHeader from "../shared/section-header/section-header";
 
 
@@ -49,7 +49,7 @@ function Partners() {
                               <Select 
                                   classNamePrefix="partner-select-city" 
                                   options={cityoptions} 
-                                  placeholder="Search By City"
+                                  placeholder="Select City"
                               />
                             </div>
                           </div>
@@ -77,7 +77,7 @@ function Partners() {
                 </div>
               </div>
               <div class="col-lg-4 col-md-12 col-sm-12 description-content-box text-center">
-                <img src={LogTerm} class="pb-20 mt-20" alt="" />
+                <img src={LongTerm} class="pb-20 mt-20 why-partner-icons" alt="" />
                 <h4 class="mb-10">Long Term Lock-in Period</h4>
                 <p>Housr Provides a lock-in period of minimum 1 year. Regular tenant search won't be a problem now.</p>
               </div>
@@ -113,7 +113,7 @@ function Partners() {
                     <div class="process-content-box wow fadeInLeft">
                       <div class="step-count"><span>01.</span><p>Step 01</p></div>
                       <div class="content">
-                        <h5 class="rcol">Share Property Details</h5>
+                        <h5 class="pcol">Share Property Details</h5>
                         <p>Fill in all the mandatory information, our sales team will further get in touch with you to schedule a property visit.</p>
                       </div>
                     </div>
@@ -122,7 +122,7 @@ function Partners() {
                     <div class="process-content-box wow fadeInLeft">
                       <div class="step-count"><span>02.</span><p>Step 02</p></div>
                       <div class="content">
-                      <h5 class="rcol">Review Proposal</h5>
+                      <h5 class="pcol">Review Proposal</h5>
                         <p>After a visit, carried out by our design & sales team, we'll share a proposal and further steps to convert the facility into a Housr property.</p>
                       </div>
                     </div>
@@ -131,7 +131,7 @@ function Partners() {
                     <div class="process-content-box wow fadeInLeft">
                       <div class="step-count"><span>03.</span><p>Step 03</p></div>
                       <div class="content">
-                      <h5 class="rcol">Sign up with Housr</h5>
+                      <h5 class="pcol">Sign up with Housr</h5>
                         <p>Once you sign up with Housr, our design and sales team will take control of the management, maintenance and marketing of the property.</p>
                       </div>
                     </div>

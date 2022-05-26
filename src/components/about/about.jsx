@@ -23,7 +23,7 @@ function About() {
             <div className="row justify-content-center">
               <div className="col-lg-4">
                 <div className="section-title text-center mb-40 wow fadeInUp">
-                  <h2 className="mb-1 rcol">About Us</h2>
+                  <h2 className="mb-1">About Us</h2>
                 </div>
               </div>
               <div className="col-lg-8 col-md-12 col-sm-12 description-content-box">
@@ -36,15 +36,15 @@ function About() {
       </section>
       {/* video section */}
       <section className="intro-video">
-        <div className="intro-wrapper-one bg_cover pt-100 about-intro-wrapper">
+        <div className="bg_cover pt-100 about-intro-wrapper">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8">
-                <div className="section-title text-center mb-60 wow fadeInUp">
+                <div className="about-page-video-section-header section-title text-center mb-60 wow fadeInUp">
                   <SectionHeader 
                     text="#LetsLiveBetter with Housr" 
                   />
-                  <h4 className="mb-10 text-white font-weight-normal">When we say hassle free living,then we leave no stone unturned to provide you with a lifestyle that is free and easy</h4>
+                  <h4 className="mb-10 text-white font-weight-normal">When we say hassle-free living, we mean leaving no stone unturned to provide you with a free, easy, and luxurious lifestyle</h4>
                 </div>
               </div>
             </div>
@@ -66,28 +66,28 @@ function About() {
             <div className="col-lg-3 col-md-6 col-sm-12 text-center pb-40">
               <div className="content"> 
                 <img src={IconVision} width="64px" className="mb-20" alt="" />
-                <h4 className="rcol">OUR VISION</h4>
+                <h4 className="pcol">OUR VISION</h4>
                 <p>To chnage the Way Millennials Live.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-12 text-center pb-40">
               <div className="content">
                 <img src={IconMission} width="64px" className="mb-20" alt="" />
-                <h4 className="rcol">OUR MISSION</h4>
+                <h4 className="pcol">OUR MISSION</h4>
                 <p>To Bring Millennials together by providing them a truly exceptional living experience.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-12 text-center pb-40">
               <div className="content">
                 <img src={IconValues} width="64px" className="mb-20" alt="" />
-                <h4 className="rcol">OUR VALUES</h4>
+                <h4 className="pcol">OUR VALUES</h4>
                 <p>We Love People. We believe in people  over process and culture over profits.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-12 text-center pb-40">
               <div className="content">
                 <img src={IconGoal} width="64px" className="mb-20" alt="" />
-                <h4 className="recent-post-list rcol">OUR GOAL</h4>
+                <h4 className="recent-post-list pcol">OUR GOAL</h4>
                 <p>We want to provide people with places they would love to live at and to do this, we manage our spaces end-to-end, making customer service our top priority.</p>
               </div>
             </div>

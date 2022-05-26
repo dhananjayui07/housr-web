@@ -129,7 +129,7 @@ body {
     overflow-x: hidden;
 }
 .rcol {
-    color: #e73943!important;
+    color: #e73943 !important;
 }
 
 @media (min-width: 1200px) {
@@ -137,7 +137,9 @@ body {
         max-width: 1200px;
     }
 }
-
+.pcol {
+    color: #784b95 !important;
+}
 .bg_cover {
     background-position: center center;
     background-size: cover;
@@ -286,7 +288,7 @@ button {
     display: inline-flex;
     position: relative;
     z-index: 1;
-    background-color: #ff344f;
+    background-color: #784B95;
     padding: 16px 40px;
     color: #fff;
     font-family: "Work Sans", sans-serif;
@@ -673,7 +675,7 @@ ul.ratings.ratings-one li.star:nth-child(1) i,
 .header-area .header-top .top-content p a,
 .header-area .header-top .top-social ul.social-link li a:hover,
 .section-title span.sub-title {
-    color: #ff344f;
+    color: #ccc;
 }
 
 .copyright-area .copyright-text p span,
@@ -759,9 +761,22 @@ ul.ratings.ratings-one li.star:nth-child(1) i,
 /** Bootstrap changes **/
 
 .btn-danger {
-    background: #ff344f;
+    background: #784B95;
+    border: none;
 }
-
+.btn-danger:hover {
+    width: 100%;
+    height: 100%;
+    background: #c00 url(../img/colorful-bg.jpeg) no-repeat center right;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    border: none;
+}
+.intro-wrapper-one.housr-gradient,
+.housr-gradient{
+    background: rgb(231,57,67);
+    background: linear-gradient(141deg, rgba(231,57,67,1) 0%, rgba(225,58,71,1) 24%, rgba(120,75,149,1) 44%, rgba(106,78,153,1) 61%, rgba(0,147,153,1) 82%, rgba(109,193,177,1) 100%);
+}
 .hero-slider-wrapper .hero-content .hero-search-wrapper .row {
     justify-content: space-evenly;
     margin: 0;
@@ -836,7 +851,22 @@ ul.ratings.ratings-one li.star:nth-child(1) i,
 }
 .f_toggle i{font-size: 12px; padding-top: 10px; display:none;}
 
+.btn-link:hover {
+    text-decoration: none;
+	color: #784B95;
+}
 
+.post-meta ul li {
+    display: inline-block;
+}
+
+.post-meta ul li span i {
+    margin-right: 10px;
+	color: #784B95;
+}
+.ti-direction-alt:before{color: #784B95;}
+.listing-slider-one .slick-arrow:hover{background:#784B95;}
+.contact-information-list .information-item .icon{background:#784b95!important}
 @media (max-width: 767px) {
 	.hero-slider-wrapper.sticky,
     .hero-slider-wrapper.sticky>div,

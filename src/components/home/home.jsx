@@ -4,13 +4,13 @@ import AmenitiesHome from "../amenities-home/amenities-home";
 import ClientCarousel from "../client-carousel/client-carousel";
 import HousrWay from "../housr-way/housr-way";
 import MostSearchedProjects from "../most-searched-projects/most-searched-projects";
-import NewLaunchedProjects from "../new-launched-projects/new-launched-projects";
+// import NewLaunchedProjects from "../new-launched-projects/new-launched-projects";
 import Newsletter from "../newsletter/newsletter";
 import Testimonials from "../testimonials/testimonials";
 import UpcomingProjects from "../upcoming-projects/upcoming-projects";
 import { WOW } from "wowjs";
 import HeroSliderHome from "../hero-slider-home/hero-slider-home";
-import PremiumProjects from "../premium-projects/premium-projects";
+// import PremiumProjects from "../premium-projects/premium-projects";
 
 
 var wow = new WOW(
@@ -35,8 +35,8 @@ function Home() {
     <React.Fragment>
       <HeroSliderHome />
       <MostSearchedProjects />
-      <PremiumProjects hasBackground />
-      <NewLaunchedProjects />
+      {/* <PremiumProjects hasBackground /> */}
+      {/* <NewLaunchedProjects /> */}
       <UpcomingProjects hasBackground />
       <HousrWay />
       <AmenitiesHome />

@@ -1,6 +1,7 @@
 .about-intro-wrapper {
     background-image: url(./images/video-section.jpeg); 
     background-position: right bottom;
+    padding-bottom: 100px;
 }
 .vision-wrap {
     background:white; 
@@ -9,4 +10,7 @@
     position:relative; 
     z-index: 2; 
     border-radius: 20px;
+}
+.about-page-video-section-header h2 {
+    color: #fff !important;
 }

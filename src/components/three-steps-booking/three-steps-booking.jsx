@@ -10,7 +10,7 @@ function ThreeStepsBooking() {
           <div className="row justify-content-center">
             <div className="col-lg-8">
               <div className="section-title mb-20 wow fadeInUp">
-                <h3 className="mb-1 rcol text-center">Book your Housr C-living in 3 easy steps</h3>
+                <h3 className="mb-1 text-center">Book your Housr C-living in 3 easy steps</h3>
               </div>
             </div>
           </div>

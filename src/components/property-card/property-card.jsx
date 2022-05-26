@@ -16,7 +16,7 @@ function PropertyCard({ imgPath, categorytext, propertyName, cityText  }) {
                         <span><i className="ti-location-pin" /> {cityText}</span> 
                         <span className="float-right"><NavLink to="/" className="btn-link"><i className="ti-share" /> Share</NavLink></span>
                     </p>
-                    <p className="border-top pt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum...</p>
+                    {/* <p className="border-top pt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum...</p> */}
                     <p className="price-listing">
                         <span>Twin Sharing Starting @ <strong className="float-right">Rs. 10,499</strong></span>
                         <span>Solo Room starting @ <strong className="float-right">Rs. 18,499</strong></span>

@@ -103,13 +103,13 @@ function Header() {
                                             <span className="dd-trigger" onClick={ToggleLocationNav}><i className="ti-arrow-down"></i></span>
                                           </li>
                                           <li className="menu-item">
-                                            <NavLink className="nav-link" to="/housr-way" onClick={onAnchorClick}>Housr Way</NavLink>
+                                            <NavLink className="nav-link" to="/" onClick={onAnchorClick}>Housr Way</NavLink>
                                           </li>
                                           <li className="menu-item">
-                                            <NavLink className="nav-link" to="/offers" onClick={onAnchorClick}>Offers</NavLink>
+                                            <NavLink className="nav-link" to="/" onClick={onAnchorClick}>Offers</NavLink>
                                           </li>
                                           <li className="menu-item">
-                                            <NavLink className="nav-link" to="/blog" onClick={onAnchorClick}>Blog</NavLink>
+                                            <NavLink className="nav-link" to="/" onClick={onAnchorClick}>Blog</NavLink>
                                           </li>
                                       </ul>
                                   </nav>

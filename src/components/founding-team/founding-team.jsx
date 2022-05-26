@@ -24,7 +24,7 @@ function FoundingTeam() {
                             </div>
                             <div className="features-content-box features-content-box-one">
                                 <h3 className="pt-20 text-center">Deepak Anand</h3>
-                                <h5 className="text-center mb-2">CO-FOUNDER &amp; CEO, HOUSR</h5>
+                                <h5 className="text-center mb-2 pcol">CO-FOUNDER &amp; CEO, HOUSR</h5>
                                 <p className="text-center mb-10">Deepak Anand is an alumnus of  INSEAD  and has worked in leadership roles at Real Estate Private Equity Funds, HT Media and HSBC.</p>
                             </div>
                         </div>
@@ -34,7 +34,7 @@ function FoundingTeam() {
                             </div>
                             <div className="features-content-box features-content-box-one">
                                 <h3 className="pt-20 text-center">Kalpesh Mehta</h3>
-                                <h5 className="text-center mb-2">CO-FOUNDER, HOUSR</h5>
+                                <h5 className="text-center mb-2 pcol">CO-FOUNDER, HOUSR</h5>
                                 <p className="text-center">Kalpesh Mehta is the alumnus of The University of Texas and The Wharton School. He holds tremendous experience in real estate.</p>
                             </div>
                         </div>

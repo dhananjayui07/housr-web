@@ -25,7 +25,7 @@ function HousrStayAbode() {
             <div className="row justify-content-center">
               <div className="col-lg-8">
                 <div className="section-title text-center mb-30 wow fadeInUp">
-                  <h2 className="rcol">StayAbode by Housr</h2>
+                  <h2 className="">StayAbode by Housr</h2>
                 </div>
               </div>
               <div className="col-lg-12 col-md-12 col-sm-12 description-content-box">
