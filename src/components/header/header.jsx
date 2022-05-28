@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import "./styles.css";
 import { NavLink } from "react-router-dom";
 import LogoImage from "./images/logo-housr.png";
-import HeaderSearch from './header-search';
+// import HeaderSearch from './header-search';
 
 function Header() {
 
@@ -94,10 +94,10 @@ function Header() {
                                           </li>
                                           <li className="menu-item has-children"><a href="void(0)" >Locations</a>
                                               <ul className={toggleLocationNav ? "sub-menu open" : "sub-menu"}>
-                                                  <li className="menu-item"><NavLink to="/" onClick={onAnchorClick}>Gurgaon</NavLink></li>
-                                                  <li className="menu-item"><NavLink to="/" onClick={onAnchorClick}>Hyderabad</NavLink></li>
-                                                  <li className="menu-item"><NavLink to="/" onClick={onAnchorClick}>Pune</NavLink></li>
-                                                  <li className="menu-item"><NavLink to="/" onClick={onAnchorClick}>Banglore</NavLink></li>
+                                                  <li className="menu-item"><NavLink to="/property-listing" onClick={onAnchorClick}>Gurgaon</NavLink></li>
+                                                  <li className="menu-item"><NavLink to="/property-listing" onClick={onAnchorClick}>Hyderabad</NavLink></li>
+                                                  <li className="menu-item"><NavLink to="/property-listing" onClick={onAnchorClick}>Pune</NavLink></li>
+                                                  <li className="menu-item"><NavLink to="/property-listing" onClick={onAnchorClick}>Banglore</NavLink></li>
                                                   <li className="menu-item"><NavLink to="/" onClick={onAnchorClick}>Coming Soon</NavLink></li>
                                               </ul>
                                             <span className="dd-trigger" onClick={ToggleLocationNav}><i className="ti-arrow-down"></i></span>
@@ -134,7 +134,7 @@ function Header() {
               </div>
           </div>
       </header>
-      {!toggleNav ? <HeaderSearch /> : ''}
+      {/* {!toggleNav ? <HeaderSearch /> : ''} */}
       
 
     </React.Fragment>
