@@ -47,33 +47,33 @@ function HeaderSearch() {
         <div className={searchBar ? 'hero-slider-wrapper sticky' : 'hero-slider-wrapper'} ref={heroSearch}>
             <div className="hero-content">
                 <div className="hero-search-wrapper wow fadeInUp" wow-data-delay="70ms">
-                <form>
-                    <div className="row">
-                    <div className="cityWrap">
-                        <div className="form_group">
-                            <Select 
-                                classNamePrefix="head-select-search" 
-                                options={cityoptions} 
-                                placeholder="Search By City"
-                            />
+                    <form>
+                        <div className="row">
+                        <div className="cityWrap">
+                            <div className="form_group">
+                                <Select 
+                                    classNamePrefix="head-select-search" 
+                                    options={cityoptions} 
+                                    placeholder="Search By City"
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div className="categoryWrap">
-                        <div className="form_group">
-                            <Select 
-                                classNamePrefix="head-select-search" 
-                                options={categoryoptions} 
-                                placeholder="Search By Category"
-                            />
+                        <div className="categoryWrap">
+                            <div className="form_group">
+                                <Select 
+                                    classNamePrefix="head-select-search" 
+                                    options={categoryoptions} 
+                                    placeholder="Search By Category"
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div className="searchWrap">
-                        <div className="form_group">
-                        <button className="main-btn">Search<span className="ti-search"></span></button>
+                        <div className="searchWrap">
+                            <div className="form_group">
+                            <button className="main-btn">Search<span className="ti-search"></span></button>
+                            </div>
                         </div>
-                    </div>
-                    </div>
-                </form>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

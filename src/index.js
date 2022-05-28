@@ -16,6 +16,7 @@ import HousrColiving from "./components/category/housr-coliving";
 import HousrHomes from "./components/category/housr-homes";
 import HousrStayAbode from "./components/category/housr-stay-abode";
 import Partners from './components/partners/partners';
+import PropertyListing from './components/property-listing/property-listing';
 
 
 ReactDOM.render(
@@ -29,6 +30,7 @@ ReactDOM.render(
       <Route path="/housr-homes" element={<HousrHomes />} />
       <Route path="/stay-abode" element={<HousrStayAbode />} />
       <Route path="/partners" element={<Partners />} />
+      <Route path="/property-listing" element={<PropertyListing />} />
     </Routes>
     <Footer />
   </Router>,

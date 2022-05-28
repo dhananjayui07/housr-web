@@ -1,0 +1,99 @@
+.property-listing-header-strip {
+    background-color: #f8f9fa;
+    margin-top: 100px;
+}
+.property-listing-header-strip h3.listing-title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding: 40px 0 20px;
+    margin: 0;
+}
+.listing-wrapper {
+    padding: 120px 0 90px;
+}
+.listing-wrapper .listing-item {
+    margin: 0;
+}
+.property-listing-filter-wrap {
+    padding: 30px 0;
+}
+.property-listing-filter-wrap form {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+.listing-datepicker {
+    position: relative;
+}
+.listing-datepicker i {
+    position: absolute;
+    right: 10px;
+    top: 11px;
+}
+.listing-datepicker input {
+    border: 1px solid #cccccc;
+    height: 38px;
+    border-radius: 4px;
+    color: #808080;
+    padding-left: 10px;
+}
+.property-listing-filter-wrap .searchButtonWrap {
+    min-width: 80px;
+}
+.property-listing-filter-wrap .searchButtonWrap .main-btn {
+    height: 38px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.show-filter-listing {
+    display: none;
+    background: #fff;
+    padding: 6px 10px;
+    margin: 0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.show-filter-listing p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .property-listing-header-strip h3.listing-title {
+        font-size: 20px;
+    }
+    .property-listing-header-strip {
+        padding: 0 10px;
+    }
+    .show-filter-listing {
+        display: block;
+    }
+    .property-listing-filter-wrap form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .property-listing-filter-wrap form .form_group {
+        right: 0;
+    }
+    .property-listing-filter-wrap form .cityWrap,
+    .property-listing-filter-wrap form .categoryWrap,
+    .listing-datepicker input {
+        width: 100%;
+    }
+    .property-listing-filter-wrap .searchButtonWrap {
+        width: 80px;
+        margin: 0 auto;
+    }
+    .listing-wrapper {
+        padding: 50px 0;
+    }
+}
