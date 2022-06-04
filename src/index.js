@@ -17,6 +17,7 @@ import HousrHomes from "./components/category/housr-homes";
 import HousrStayAbode from "./components/category/housr-stay-abode";
 import Partners from './components/partners/partners';
 import PropertyListing from './components/property-listing/property-listing';
+import PropertyDisplay from './components/property-display/property-display';
 
 
 ReactDOM.render(
@@ -31,6 +32,7 @@ ReactDOM.render(
       <Route path="/stay-abode" element={<HousrStayAbode />} />
       <Route path="/partners" element={<Partners />} />
       <Route path="/property-listing" element={<PropertyListing />} />
+      <Route path="/property-display" element={<PropertyDisplay />} />
     </Routes>
     <Footer />
   </Router>,
