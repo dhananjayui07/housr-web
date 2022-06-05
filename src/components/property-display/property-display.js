@@ -16,16 +16,16 @@ function PropertyDisplay() {
     const settings = {
         customPaging: function(i) {
             return (
-              <a>
+              <button>
                 <img src={PropertyImage1} alt="" />
-              </a>
+              </button>
             );
         },
         dots: true,
-        arrows: false,
+        arrows: true,
         infinite: true,
         speed: 500,
-        fade: true,
+        fade: false,
         slidesToShow: 1,
         autoplay: true,
         slidesToScroll: 1
