@@ -27,7 +27,7 @@ function PropertyDisplay() {
         speed: 500,
         fade: false,
         slidesToShow: 1,
-        autoplay: false,
+        autoplay: true,
         slidesToScroll: 1
     };
 
