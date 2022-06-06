@@ -1,7 +1,5 @@
 import React from "react";
-import AmenitiesHome from "../amenities-home/amenities-home";
 import SectionHeader from "../shared/section-header/section-header";
-import UpcomingProjects from "../upcoming-projects/upcoming-projects";
 import "./styles.css";
 import PropertyMap from "./images/property-location.png";
 import Slider from "react-slick";
@@ -10,6 +8,8 @@ import PropertyImage2 from "./images/property-display.jpeg"
 import PropertyImage3 from "./images/property-display.jpeg"
 import PropertyImage4 from "./images/property-display.jpeg"
 import PropertyImage5 from "./images/property-display.jpeg"
+import NearbyProjects from "../nearby-projects/nearby-projects";
+import AmenitiesHousrHomes from "../amenities-housr-homes/amenities-housr-homes";
 
 
 function PropertyDisplay() {
@@ -37,7 +37,7 @@ function PropertyDisplay() {
                 <div className="property-display-banner-content">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-7 col-md-7 col-sm-12">
+                            <div className="col-lg-8 col-md-8 col-sm-12">
                                 <div className="banner-content">
                                     <div>
                                         <h3>Coleman <span>Hebbal</span></h3>
@@ -45,16 +45,17 @@ function PropertyDisplay() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-5 col-md-5 col-sm-12 full-w">
+                            <div className="col-lg-4 col-md-4 col-sm-12 full-w">
                                 <div className="contact-wrapper-one mb-50 mt-50 wow fadeInRight">
                                 <div className="partners-form">
                                     <form>
                                     <div className="row">
                                         <div className="col-lg-12">
-                                            <div className="title-form-tab button-group">
+                                            {/* <div className="title-form-tab button-group">
                                                 <button className="button active">Virtual tour</button>
                                                 <button className="button ">live tour</button>
-                                            </div>
+                                            </div> */}
+                                            <h4 className="mb-35 title-form">Book a tour</h4>
                                             <div className="form_group">
                                                 <input type="text" className="form_control" placeholder="Full Name" name="name" required />
                                             </div>
@@ -131,7 +132,7 @@ function PropertyDisplay() {
                     </Slider>
                 </div>
             </section>
-            <AmenitiesHome />
+            <AmenitiesHousrHomes />
             <section className="property-location">
                 <div className="container">
                     <div className="section-title section-title-left mb-75 wow fadeInUp text-center">
@@ -144,7 +145,7 @@ function PropertyDisplay() {
                     <img src={PropertyMap} alt="" />
                 </div>
             </section>
-            <UpcomingProjects />
+            <NearbyProjects />
         </React.Fragment>
     );
 }

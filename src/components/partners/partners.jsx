@@ -29,7 +29,7 @@ function Partners() {
                     <form>
                       <div className="row">
                           <div className="col-lg-12">
-                            <h4 className="mb-35 pl-10 title-form">Partner with us</h4>
+                            <h4 className="mb-35 title-form">Partner with us</h4>
                             <div className="form_group">
                                 <input type="text" className="form_control" placeholder="First Name" name="name" required />
                             </div>
