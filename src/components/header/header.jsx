@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import "./styles.css";
 import { NavLink } from "react-router-dom";
 import LogoImage from "./images/logo-housr.png";
-// import HeaderSearch from './header-search';
+import HeaderSearch from './header-search';
 
 function Header() {
 
@@ -134,7 +134,7 @@ function Header() {
               </div>
           </div>
       </header>
-      {/* {!toggleNav ? <HeaderSearch /> : ''} */}
+      {!toggleNav ? <HeaderSearch /> : ''}
       
 
     </React.Fragment>

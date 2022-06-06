@@ -1,6 +1,6 @@
 .section-heading-text {
-    font-size: 48px;
-    line-height: 55px;
+    font-size: 42px;
+    line-height: 50px;
     color: #0d0d0d;
     font-weight: 700;
     margin: 0 0 0.25rem;
@@ -9,8 +9,8 @@
 .section-heading-sub-text {
     font-weight: 400;
     margin: 0 0 10px;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 36px;
     color: #0d0d0d;
     font-family: "Work Sans", sans-serif;
 }

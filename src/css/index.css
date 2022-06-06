@@ -923,4 +923,18 @@ ul.ratings.ratings-one li.star:nth-child(1) i,
     .amenities-wrapper-one {
         padding: 50px 0 !important;
     }
+
+    .amenities-app .features-list-one .list-item {
+        padding: 0;
+    }
+    .amenities-app .features-list-one .list-item .icon {
+        min-width: 40px;
+        max-width: 40px;
+        height: 40px;
+        margin-right: 16px;
+    }
+    .amenities-app .features-list-one .list-item .icon:before {
+        width: 40px;
+        height: 40px;
+    }
 }
