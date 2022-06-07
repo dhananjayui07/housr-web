@@ -24,7 +24,8 @@ class HeroSliderHome extends Component {
     componentDidMount() {
         axios.get('/home')
             .then((res) => {
-                this.setState({ bannerData: [res.data.data.home_page], isDataLoaded: true })
+                console.log(res);
+                this.setState({ bannerData: [res.data.data.main_page], isDataLoaded: true })
             }).catch(err => console.error(err))
     }
 
