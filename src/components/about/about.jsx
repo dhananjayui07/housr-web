@@ -13,6 +13,8 @@ import IconMission from "./images/mission.svg";
 import IconValues from "./images/values.svg";
 import IconGoal from "./images/goal.svg";
 
+
+
 function About() {
   return (
     <React.Fragment>
