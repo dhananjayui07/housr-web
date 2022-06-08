@@ -8,7 +8,7 @@ import "./styles.css";
 import TestimonialCard from "./testimonial-card";
 import Slider from "react-slick";
 import SectionHeader from "../shared/section-header/section-header";
-import axios from '../../axios/index';
+import axios from "../../axios/index";
 
 // const TESTIMONIAL_DATA = [
 //     {
@@ -31,94 +31,101 @@ import axios from '../../axios/index';
 //     }
 // ];
 const settings = {
-    dots: false,
-    arrows: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    autoplay: true,
-    slidesToScroll: 1,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: false
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                initialSlide: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
+  dots: false,
+  arrows: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 2,
+  autoplay: true,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 };
 
 class Testimonials extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { testimonialData: [], isDataLoaded: false }
+  constructor(props) {
+    super(props);
+    this.state = { testimonialData: [], isDataLoaded: false };
+  }
+  componentDidMount() {
+    axios
+      .get("/home")
+      .then((res) => {
+        this.setState({
+          testimonialData: res.data.data.testimonials,
+          isDataLoaded: true,
+        });
+      })
+      .catch((err) => console.error(err));
+  }
+  render() {
+    const { testimonialData, isDataLoaded } = this.state;
+    if (!isDataLoaded) {
+      return (
+        <div className="text-center">
+          <p> Loading... </p>
+        </div>
+      );
     }
-    componentDidMount() {
-        axios.get('/building-listing')
-            .then((res) => {
-                this.setState({ testimonialData: res.data.data.filtered_buildings, isDataLoaded: true })
-            }).catch(err => console.error(err))
-    }
-    render() {
-        const { testimonialData, isDataLoaded } = this.state;
-        if (!isDataLoaded) {
-            return (
-                <div className="text-center">
-                    <p> Loading... </p>
+    return (
+      <React.Fragment>
+        <section className="testimonials_one">
+          <div className="testimonial_one_map" />
+          <div className="container-box">
+            <div className="section-title text-center pb-50">
+              <SectionHeader
+                text="Our Testimonials"
+                subtext="Our Happy Housr Clan"
+              />
+            </div>
+            <div className="row">
+              <div className="col-xl-12">
+                <div className="testimonials_one_carousel">
+                  <Slider {...settings}>
+                    {testimonialData.map((item, index) => {
+                      return (
+                        <TestimonialCard
+                          key={index}
+                          ImageSrc={item.image_url}
+                          Text={item.description}
+                          Name={item.name}
+                          Designation={item.occupation}
+                        />
+                      );
+                    })}
+                  </Slider>
                 </div>
-            )
-        };
-        return (
-            <React.Fragment>
-                <section className="testimonials_one">
-                    <div className="testimonial_one_map" />
-                    <div className="container-box">
-                        <div className="section-title text-center pb-50">
-                            <SectionHeader text="Our Testimonials" subtext="Our Happy Housr Clan" />
-                        </div>
-                        <div className="row">
-                            <div className="col-xl-12">
-                                <div className="testimonials_one_carousel">
-                                    <Slider {...settings}>
-                                        {
-                                            testimonialData.map((item, index) => {
-                                                return (
-                                                    <TestimonialCard key={index}
-                                                        ImageSrc={item.ImageSrc}
-                                                        Text={item.Text}
-                                                        Name={item.Name}
-                                                        Designation={item.Designation}
-                                                    />
-                                                );
-                                            })
-                                        }
-                                    </Slider>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </React.Fragment>
-        );
-    }
+              </div>
+            </div>
+          </div>
+        </section>
+      </React.Fragment>
+    );
+  }
 }
 
 export default Testimonials;

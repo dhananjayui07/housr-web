@@ -3,51 +3,9 @@ import PropTypes from "prop-types";
 import Slider from "react-slick";
 import PropertyCard from "../property-card/property-card";
 import "./styles.css";
-
-// import PropertyOne from "./images/listing-grid-1.jpeg";
-// import PropertyTwo from "./images/New1.jpeg";
-// import PropertyThree from "./images/New2.jpeg";
 import SectionHeader from "../shared/section-header/section-header";
 import axios from "../../axios/index";
 
-// const SEARCHED_PROPERTIES_DATA = [
-//     {
-//         imgPath: PropertyOne,
-//         categorytext: "Homes",
-//         propertyName: "Housr Malibu Sec 47, Good Earth City Centre",
-//         cityText: "Gurgaon"
-//     },
-//     {
-//         imgPath: PropertyTwo,
-//         categorytext: "Co-Living",
-//         propertyName: "Housr Malibu Sec 47, Good Earth City Centre",
-//         cityText: "Gurgaon"
-//     },
-//     {
-//         imgPath: PropertyThree,
-//         categorytext: "Homes",
-//         propertyName: "Housr Malibu Sec 47, Good Earth City Centre",
-//         cityText: "Gurgaon"
-//     },
-//     {
-//         imgPath: PropertyOne,
-//         categorytext: "Co-Living",
-//         propertyName: "Housr Malibu Sec 47, Good Earth City Centre",
-//         cityText: "Gurgaon"
-//     },
-//     {
-//         imgPath: PropertyTwo,
-//         categorytext: "Homes",
-//         propertyName: "Housr Malibu Sec 47, Good Earth City Centre",
-//         cityText: "Gurgaon"
-//     },
-//     {
-//         imgPath: PropertyThree,
-//         categorytext: "Co-Living",
-//         propertyName: "Housr Malibu Sec 47, Good Earth City Centre",
-//         cityText: "Gurgaon"
-//     }
-// ];
 const settings = {
   dots: false,
   arrows: true,
@@ -141,8 +99,10 @@ class MostSearchedProjects extends Component {
                       key={index}
                       imgPath={item.image_url}
                       categorytext={item.vector_name}
-                      propertyName={item.property_type}
+                      propertyName={item.building_name}
                       cityText={item.city}
+                      startingPrice={item.startingPrice}
+                      id={item.building_section_id}
                     />
                   );
                 })}
